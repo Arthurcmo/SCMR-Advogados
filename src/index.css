@@ -1,31 +1,39 @@
 :root {
   /* Modo claro */
-  --color-bg: #fdfdfd;                    /* Fundo levemente off-white */
-  --color-text: #1a1a1a;
-  --color-primary: #fd7114;              /* Laranja queimado mais sóbrio */
-  --color-primary-light: #ff914d;        /* Versão clara suave */
-  --color-secondary: #f2e9e2;            /* Fundo de seção (puxado para nude/bege) */
-  --color-accent: #3c3c3c;               /* Acento escuro p/ detalhes */
-  --color-navbar: #fff5ee;               /* Navbar levemente destacada (tom pastel do laranja) */
+  --color-bg: #EFE4DC;                  /* Fundo principal claro */
+  --color-bg-negative: #151210;
+  --color-text: #151210;                /* Texto escuro principal */
+  --color-primary: #FF700F;             /* Laranja da marca */
+  --color-primary-light: #ffa450;       /* Laranja suavizado para hover/botões */
+  --color-primary-dark: #CC5900; 
+  --color-secondary: #eee;           /* Fundo de seções ou cards */
+  --color-accent: #26130D;              /* Acento escuro (detalhes, bordas) */
+  --shadow-accent: rgba(38, 19, 13, 0.3); /* Versão com opacidade para sombra */
+  --color-navbar: #ffffff;              /* Navbar destacada mas neutra */
 }
 
 body.dark {
   /* Modo escuro */
-  --color-bg: #1b1b1b;
-  --color-text: #f5f5f5;
-  --color-primary: #fd7114;              /* Mantém o mesmo laranja (ótimo contraste) */
-  --color-primary-light: #ff914d;
-  --color-secondary: #292929;            /* Fundo secundário com contraste suave */
-  --color-accent: #bbbbbb;               /* Acento claro para elementos secundários */
-  --color-navbar: #26211c;               /* Navbar levemente mais clara que o fundo (quase sépia) */
+  --color-bg: #151210;                  /* Fundo escuro da marca */
+  --color-bg-negative: #EFE4DC;
+  --color-text: #EFE4DC;                /* Texto claro sobre fundo escuro */
+  --color-primary: #FF700F;             /* Laranja permanece para contraste */
+  --color-primary-light: #CC5900;       /* Versão clara para hover */
+  --color-primary-dark: #ffa450; 
+  --color-secondary: #26130D;           /* Fundo secundário escuro */
+  --color-accent: #EFE4DC;              /* Acento claro em modo escuro */
+  --shadow-accent: rgba(239, 228, 220, 0.2); /* Sombra clara para destacar */
+  --color-navbar: #26130D;              /* Navbar um pouco mais clara que o fundo */
 }
+
 
 
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
   margin: 0;
-  font-family: sans-serif;
+    font-family: 'Urbanist', sans-serif;
+
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 

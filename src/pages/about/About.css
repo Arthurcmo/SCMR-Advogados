@@ -1,0 +1,27 @@
+.sobre-nos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Arial', sans-serif;
+}
+
+.sobre-nos-container .titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-primary-dark);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.sobre-nos-container .descricao {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-text);
+}

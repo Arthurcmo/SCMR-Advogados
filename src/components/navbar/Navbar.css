@@ -4,10 +4,11 @@
   justify-content: space-between;
   padding: 1rem 2rem;
   background-color: var(--color-navbar);
-   color: var(--color-text);
+  color: var(--color-text);
   align-items: center;
   transition: background-color 0.3s ease-in-out;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px var(--shadow-accent);
+
 }
 
 .navbar-logo {
@@ -31,15 +32,16 @@
 .navbar-links .btn-noticias {
   padding: 0.5rem 1rem;
   background-color: var(--color-primary);
-  border: var(--color-secondary) 1px solid;
+  border: var(--color-accent) 1px solid;
   border-radius: 5px;
   color: var(--color-text);
   transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 2px 5px var(--shadow-accent);
 }
 
 .navbar-links .btn-contato:hover,
 .navbar-links .btn-noticias:hover {
-  background-color: var(--color-primary-light);
+  background-color: var(--color-primary-dark);
 }
 
 /* Ícones de redes sociais */
@@ -56,7 +58,7 @@
 
 /* Dark Mode */
 body.dark .navbar {
-  background-color: var(--color-primary);
+  background-color: var(--color-navbar);
 }
 
 
@@ -71,7 +73,7 @@ body.dark .navbar {
 }
 
 .darkmode-toggle:hover {
-  color: var(--color-primary-light);
+  color: var(--color-primary-dark);
 }
 
 /* Sidebar overlay escurecido */
@@ -81,8 +83,7 @@ body.dark .navbar {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 98;
+  z-index: 2;
 }
 
 /* Sidebar sobreposta */
@@ -91,42 +92,54 @@ body.dark .navbar {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 75vw;
-  max-width: 300px;
+  width: 50vw;
+  max-width: 750px;
   background-color: var(--color-navbar);
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-  padding: 2rem 1rem;
+  padding: 5rem 0em;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  z-index: 99;
+  gap: 0;
+  z-index: 3;
+  transform: translateX(-100%);
+  clip-path: polygon(0 0, 100% 0, 50% 50%, 0% 100%);
+}
+
+
+/* Quando ativa, move para a posição visível */
+.navbar-sidebar.active {
+  transform: translateX(0%);
   transition: transform 0.3s ease-in-out;
+
 }
 
 .navbar-sidebar a {
   font-size: 1.2rem;
   text-decoration: none;
   color: var(--color-text);
-  padding: 0.5rem 0;
+  padding: 2rem 2rem;
 }
 
 .navbar-sidebar a:hover {
   color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 
 .close-btn {
   background: transparent;
   border: none;
   font-size: 1.5rem;
-  align-self: flex-end;
+  align-self: flex-start;
   cursor: pointer;
   color: var(--color-text);
-  margin-bottom: 1rem;
+  z-index: 9999;
+  transition: color 0.3s ease-in-out;
+  position: absolute;
+  margin-top: -1rem;
 }
 
-/* Oculta botão mobile em desktop */
 .navbar-mobile-toggle {
-  display: none;
+  display: block;
 }
 
 @media (max-width: 768px) {

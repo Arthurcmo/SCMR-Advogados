@@ -1,8 +1,12 @@
 .toggle-switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 70px;
+  height: 36px;
+}
+.toggle-switch :hover {
+  cursor: pointer;
+  background-color: var(--color-accent);
 }
 
 .toggle-switch input {
@@ -13,28 +17,51 @@
 
 .slider {
   position: absolute;
-  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--color-secondary);
-  transition: 0.4s;
+  background-color: var(--color-bg);
+  border-radius: 34px;
+  transition: background-color 0.3s;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  border: 1px solid var(--color-accent);
+
 }
 
-.slider .icon {
-  color: var(--color-accent);
-  font-size: 18px;
+
+.icon {
+  font-size: 16px;
+  color: var(--color-primary);
+  transition: opacity 0.3s ease;
+}
+
+/* Bolinha deslizante */
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
   transition: transform 0.3s ease;
+  z-index: 1;
 }
 
-input:checked + .slider {
-  background-color: var(--color-primary-light);
+input:checked + .slider::before {
+  transform: translateX(34px);
 }
 
-.toggle-switch .slider {
-  border-radius: 34px;
+/* Ícones com base no estado */
+input:checked + .slider .sun {
+  opacity: 0.9;
 }
+input:not(:checked) + .slider .moon {
+  opacity: 0.9;
+}
+

@@ -14,7 +14,8 @@ export const DarkModeToggle = () => {
         onChange={(e) => setIsDark(e.target.checked)}
       />
       <span className="slider">
-        {isDark ? <FaMoon className="icon" /> : <FaSun className="icon" />}
+        <FaSun className="icon sun" />
+        <FaMoon className="icon moon" />
       </span>
     </label>
   );
