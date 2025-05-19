@@ -8,8 +8,10 @@
   --color-primary-dark: #CC5900; 
   --color-secondary: #eee;           /* Fundo de seções ou cards */
   --color-accent: #26130D;              /* Acento escuro (detalhes, bordas) */
-  --shadow-accent: rgba(38, 19, 13, 0.3); /* Versão com opacidade para sombra */
+  --shadow-accent: #26130d4d; /* Versão com opacidade para sombra */
   --color-navbar: #ffffff;              /* Navbar destacada mas neutra */
+  --gradient-navbar: linear-gradient(90deg, #ffffff, #EFE4DC); /* light mode gradient */
+
 }
 
 body.dark {
@@ -24,6 +26,7 @@ body.dark {
   --color-accent: #EFE4DC;              /* Acento claro em modo escuro */
   --shadow-accent: rgba(239, 228, 220, 0.2); /* Sombra clara para destacar */
   --color-navbar: #26130D;              /* Navbar um pouco mais clara que o fundo */
+  --gradient-navbar: linear-gradient(90deg, #26130D, #151210); /* dark mode gradient */
 }
 
 

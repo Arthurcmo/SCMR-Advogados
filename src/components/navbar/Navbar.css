@@ -3,17 +3,34 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background-color: var(--color-navbar);
+    background: linear-gradient(135deg, var(--color-navbar), var(--color-primary-light));
   color: var(--color-text);
   align-items: center;
-  transition: background-color 0.3s ease-in-out;
+  transition:  0.3s;
   box-shadow: 0 2px 5px var(--shadow-accent);
-
+   position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-logo {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.navbar-logo-text {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+  text-decoration: none;
+  z-index: 9999;
+  position: relative;
+}
+
+.navbar-logo-text:hover {
+  color: var(--color-primary-dark);
 }
 
 .navbar-links {
@@ -35,7 +52,7 @@
   border: var(--color-accent) 1px solid;
   border-radius: 5px;
   color: var(--color-text);
-  transition: background-color 0.3s ease-in-out;
+  transition:0.3s;
   box-shadow: 0 2px 5px var(--shadow-accent);
 }
 
@@ -43,6 +60,31 @@
 .navbar-links .btn-noticias:hover {
   background-color: var(--color-primary-dark);
 }
+
+
+.button {
+  background: var(--color-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.button:hover {
+  background: var(--color-primary-dark);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.button:focus {
+  outline: 2px solid var(--color-primary-light);
+  outline-offset: 2px;
+}
+
 
 /* Ícones de redes sociais */
 .navbar-socials a {
@@ -96,7 +138,7 @@ body.dark .navbar {
   max-width: 750px;
   background-color: var(--color-navbar);
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-  padding: 5rem 0em;
+  padding: 7rem 0em;
   display: flex;
   flex-direction: column;
   gap: 0;
