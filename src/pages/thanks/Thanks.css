@@ -1,0 +1,44 @@
+
+
+.obrigado-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.check-icon {
+  color: var(--primary-color);
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.obrigado-title {
+  font-size: 32px;
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+.obrigado-text {
+  font-size: 18px;
+  max-width: 600px;
+  margin-bottom: 24px;
+}
+
+.voltar-btn {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.voltar-btn:hover {
+  background-color: #CC5900;
+}

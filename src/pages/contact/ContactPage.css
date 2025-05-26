@@ -1,0 +1,139 @@
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--color-bg);
+    max-width: 1200px;
+    margin: auto;
+    color: var(--color-text);
+    transition: background-color 0.3s, color 0.3s;
+}
+    
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-info h2 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: var(--color-muted);
+}
+
+.socials {
+  margin-top: 1rem;
+}
+
+.socials a {
+  display: block;
+  margin: 0.3rem 0;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  flex: 2;
+  min-width: 300px;
+  background: var(--color-secondary);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px var(--shadow-accent);
+  transition: background-color 0.3s, color 0.3s;
+
+}
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  font-family: inherit;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(100, 100, 255, 0.2);
+}
+
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.contact-form h2 {
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+}
+
+.form-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form textarea {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.contact-info p svg {
+  margin-right: 0.5rem;
+  color: var(--color-primary);
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.3rem 0;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}

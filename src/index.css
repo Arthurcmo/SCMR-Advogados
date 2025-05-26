@@ -21,15 +21,15 @@ body.dark {
   --color-text: #EFE4DC;                /* Texto claro sobre fundo escuro */
   --color-primary: #FF700F;             /* Laranja permanece para contraste */
   --color-primary-light: #CC5900;       /* Versão clara para hover */
-  --color-primary-dark: #ffa450; 
+  --color-primary-dark: #050505; 
   --color-secondary: #26130D;           /* Fundo secundário escuro */
   --color-accent: #EFE4DC;              /* Acento claro em modo escuro */
   --shadow-accent: rgba(239, 228, 220, 0.2); /* Sombra clara para destacar */
   --color-navbar: #26130D;              /* Navbar um pouco mais clara que o fundo */
   --gradient-navbar: linear-gradient(90deg, #26130D, #151210); /* dark mode gradient */
+
+
 }
-
-
 
 body {
   background-color: var(--color-bg);

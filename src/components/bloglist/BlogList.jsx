@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import matter from "gray-matter";
-
+import './BlogList.css';
 const BlogList = () => {
   const [posts, setPosts] = useState([]);
 
@@ -11,7 +11,7 @@ const BlogList = () => {
         import: 'default',
         query: '?raw'
       });
-
+      console.log('📁 Arquivos encontrados:', Object.keys(files));
       const loadedPosts = [];
 
       for (const path in files) {
@@ -23,13 +23,14 @@ const BlogList = () => {
 
           const raw = await files[path]();
           const { data, content } = matter(raw);
-
+          console.log(`📄 Carregando post: ${raw}`);
           loadedPosts.push({
             slug,
             title: data.title || slug,
             excerpt: data.excerpt || content.slice(0, 150) + '...',
             date: data.date,
           });
+          console.log(loadedPosts);
         } catch (err) {
           console.error('Erro ao carregar post:', err);
         }

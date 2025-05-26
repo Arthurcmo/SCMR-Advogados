@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "Buffer": "^0.0.0",
+    "buffer": "^6.0.3",
     "framer-motion": "^12.10.5",
     "gray-matter": "^4.0.3",
     "react": "^19.1.0",
