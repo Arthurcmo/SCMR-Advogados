@@ -8,6 +8,7 @@ const BlogPost = () => {
   const { slug } = useParams();
   const [post, setPost] = useState(null);
 
+
   useEffect(() => {
   async function fetchPost() {
     console.log('📥 Buscando post...');
@@ -52,6 +53,8 @@ const BlogPost = () => {
   fetchPost();
 }, [slug]);
 
+  
+
 
   if (!post) return <div className="loading">⏳ Carregando artigo...</div>;
 
@@ -69,7 +72,7 @@ const BlogPost = () => {
   };
 
   return (
-    <div className="blog-post">
+    <div className="blog-container">
       <Helmet>
         <title>{post.title} | Sovierzoski | Carleial | Magnabosco Advogados</title>
         <meta name="description" content={post.excerpt || post.content.slice(0, 160)} />
@@ -78,7 +81,6 @@ const BlogPost = () => {
         </script>
       </Helmet>
 
-      <h1>{post.title}</h1>
       <small>{new Date(post.date).toLocaleDateString()}</small>
       <ReactMarkdown>{post.content}</ReactMarkdown>
     </div>

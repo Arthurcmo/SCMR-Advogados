@@ -26,7 +26,7 @@ function Navbar() {
 
       <div className="navbar-links">
         <Link to="/contato" className="button">Contato</Link>
-        <Link to="/noticias" className="button">Notícias</Link>
+        <Link to="/blog" className="button">Blog</Link>
         <div className="navbar-phone">(41) 3030-9890</div>
         <div className="navbar-socials">
           <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer"><FaWhatsapp size={30} /></a>

@@ -137,3 +137,54 @@ h2 {
 .socials a:hover {
   text-decoration: underline;
 }
+
+/* Responsividade para telas menores (celulares) */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 0rem 0rem;
+    width: 80%;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 80%;
+    padding: 0rem;
+  }
+
+  .contact-form {
+    box-shadow: none;
+    padding: 1.5rem 0.5rem;
+    border-radius: 0;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    width: 80%;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+
+  .contact-form select {
+    width: 88%;
+  }
+
+  .contact-form button {
+    width: 88%;
+  }
+
+  h2,
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .socials a {
+    font-size: 1rem;
+  }
+}

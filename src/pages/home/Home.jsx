@@ -22,7 +22,6 @@ const Home = () => {
             {/* <News />
             <Prizes />
             <Footer /> */}
-            <Footer/>
         </div>
     );
 };

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import matter from "gray-matter";
 import './BlogList.css';
+
 const BlogList = () => {
   const [posts, setPosts] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function loadPosts() {
@@ -35,21 +37,17 @@ const BlogList = () => {
           console.error('Erro ao carregar post:', err);
         }
       }
-
-      // Ordenar por data (opcional)
-      loadedPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
-
       setPosts(loadedPosts);
-    }
+    } loadPosts();
+  }, []); 
+  
 
-    loadPosts();
-  }, []);
 
   return (
     <div className="blog-list">
       <h1>📚 Blog</h1>
       {posts.map(post => (
-        <div key={post.slug} className="blog-preview">
+        <div key={post.slug} className="blog-preview" onClick={() => navigate(`/blog/${post.slug}`)}>
           <h2>
             <Link to={`/blog/${post.slug}`}>{post.title}</Link>
           </h2>

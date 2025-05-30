@@ -6,6 +6,7 @@ import BlogPost from "./pages/blogpost/BlogPost";
 import ContactPage from "./pages/contact/ContactPage";
 import Footer from "./components/footer/Footer";
 import Thanks from "./pages/thanks/Thanks";
+import BlogList from "./components/bloglist/BlogList";
 function App() {
   return (
     <>
@@ -13,10 +14,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<About/>} />
+        <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/contato" element={<ContactPage/>} />
         <Route path="/obrigado" element={<Thanks />} />
-
       </Routes>
       <Footer />
     </>
