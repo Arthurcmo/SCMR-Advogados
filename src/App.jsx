@@ -7,6 +7,8 @@ import ContactPage from "./pages/contact/ContactPage";
 import Footer from "./components/footer/Footer";
 import Thanks from "./pages/thanks/Thanks";
 import BlogList from "./components/bloglist/BlogList";
+import PracticeAreas from "./components/practiceareas/PracticeAreas";
+import Attorneys from "./components/attorneys/Attorneys";
 function App() {
   return (
     <>
@@ -18,6 +20,8 @@ function App() {
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/contato" element={<ContactPage/>} />
         <Route path="/obrigado" element={<Thanks />} />
+        <Route path="servicos" element={<PracticeAreas />} />
+        <Route path="equipe" element={<Attorneys />} />
       </Routes>
       <Footer />
     </>

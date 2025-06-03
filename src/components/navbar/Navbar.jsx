@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useDarkMode } from '../../contexts/ColorSchemeContext';
 import { Link } from 'react-router-dom';
 import {
   FaWhatsapp,
@@ -10,17 +11,26 @@ import './Navbar.css';
 import { DarkModeToggle } from '../darkmodetoggle/DarkModeToggle';
 function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const { isDark, setIsDark } = useDarkMode();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50); // Define o limite de rolagem para mudar o estilo
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <nav className="navbar">
+    <nav className={` ${scrolled ? 'navbar' : 'navbar-top'}`}>
       <div className="navbar-mobile-toggle">
         <button className="close-btn" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>☰</button>
       </div>
-      <div className="navbar-logo">
-        <Link to="/" className="navbar-logo-text">
-          <span>Sovierzoski</span><br />
-          <span>Carleial</span><br />
-          <span>Magnabosco</span>
+      <div  className={` ${scrolled ? 'navbar-logo' : 'navbar-logo'}`}>
+        <Link to="/">
+          <img src={isDark ? '/01-cropped.svg' : '/05-cropped.svg'} className={` ${scrolled ? 'navbar-logo' : 'navbar-logo'}`}  />       
         </Link>
       </div>
 
@@ -46,7 +56,6 @@ function Navbar() {
             <Link to="/">Início</Link>
             <Link to="/sobre">Sobre</Link>
             <Link to="/servicos">Serviços</Link>
-            <Link to="/noticias">Notícias</Link>
             <Link to="/contato">Contato</Link>
             <Link to="/equipe">Equipe</Link>
             <Link to="/blog">Blog</Link>
