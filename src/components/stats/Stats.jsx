@@ -36,7 +36,7 @@ const Stats = () => {
 
     return (
         <div className="stats-container">
-            <h2 className="stats-title">Our Achievements</h2>
+            <h2 className="stats-title">Nossos feitos</h2>
             <Carousel responsive={responsive} infinite autoPlay autoPlaySpeed={3000}>
                 {stats.map((stat, index) => (
                     <div key={index} className="stat-item">

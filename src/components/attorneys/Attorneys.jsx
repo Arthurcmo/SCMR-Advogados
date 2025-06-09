@@ -25,7 +25,7 @@ const attorneys = [
 const Attorneys = () => {
   return (
     <section className="attorneys-section">
-      <h2 className="section-title">Meet Our Attorneys</h2>
+      <h2 className="section-title">Conheça nossos advogados</h2>
       <div className="attorneys-grid">
         {attorneys.map((attorney, index) => (
           <div className="attorney-card" key={index}>

@@ -9,6 +9,7 @@ import Thanks from "./pages/thanks/Thanks";
 import BlogList from "./components/bloglist/BlogList";
 import PracticeAreas from "./components/practiceareas/PracticeAreas";
 import Attorneys from "./components/attorneys/Attorneys";
+import NotFound from "./pages/notfound/NotFound";
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/obrigado" element={<Thanks />} />
         <Route path="servicos" element={<PracticeAreas />} />
         <Route path="equipe" element={<Attorneys />} />
+        <Route path="*" element={<NotFound />} /> {/* <- essa é a rota 404 */}
       </Routes>
       <Footer />
     </>

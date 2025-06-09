@@ -10,8 +10,8 @@ const Hero = () => {
             </video>
             <img src="/Hero1.jpg" alt="Law Firm" className="hero-image" />
             <div className="hero-content">
-                <h1>Welcome to Our Law Firm</h1>
-                <p>Professional and Reliable Legal Services</p>
+                <h1>Bem vindos a SCM Advogados</h1>
+                <h2>Serviços legais profissionais</h2>
             </div>
         </div>
     );

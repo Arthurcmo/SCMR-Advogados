@@ -31,7 +31,7 @@ const practiceAreas = [
 const PracticeAreas = () => {
   return (
     <section className="practice-areas">
-      <h2 className="section-title">Our Areas of Expertise</h2>
+      <h2 className="section-title">Áreas de expertise</h2>
       <div className="areas-grid">
         {practiceAreas.map((area, index) => (
           <div className="area-card" key={index}>
