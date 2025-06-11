@@ -10,6 +10,7 @@ import BlogList from "./components/bloglist/BlogList";
 import PracticeAreas from "./components/practiceareas/PracticeAreas";
 import Attorneys from "./components/attorneys/Attorneys";
 import NotFound from "./pages/notfound/NotFound";
+import './App.css'; // Importando o CSS global
 function App() {
   return (
     <>
@@ -17,7 +18,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<About/>} />
-        <Route path="/blog" element={<BlogList />} />
+        <Route path="/blog" element={<>
+                                    <h1 className="page-header">Blog</h1>
+                                    <BlogList />
+                                    </>} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/contato" element={<ContactPage/>} />
         <Route path="/obrigado" element={<Thanks />} />

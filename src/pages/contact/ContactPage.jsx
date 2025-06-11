@@ -5,6 +5,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaLinkedin, FaInstagram, FaEnvelope } from 
 const ContactPage = () => {
   return (
     <div className="contact-container">
+      <h1>Contate um advogado de confiança</h1>
       <div className="contact-info">
         <h2>Contato</h2>
         <p><FaMapMarkerAlt /> Av. Exemplo, 123 - São Paulo, SP</p>
