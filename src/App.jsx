@@ -26,8 +26,11 @@ function App() {
         <Route path="/contato" element={<ContactPage/>} />
         <Route path="/obrigado" element={<Thanks />} />
         <Route path="servicos" element={<PracticeAreas />} />
-        <Route path="equipe" element={<Attorneys />} />
-        <Route path="*" element={<NotFound />} /> {/* <- essa é a rota 404 */}
+        <Route path="equipe" element={<>
+                                    <h1 className="page-header">Equipe</h1>
+                                    <Attorneys />
+                                    </>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>
