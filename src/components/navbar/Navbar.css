@@ -3,12 +3,12 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-    background: linear-gradient(135deg, var(--color-navbar), var(--color-bg));
+  background: linear-gradient(135deg, var(--color-navbar), var(--color-bg));
   color: var(--color-text);
   align-items: center;
   transition:  0.3s;
   box-shadow: 0 2px 5px var(--shadow-accent);
-   position: sticky;
+  position: sticky;
   top: 0;
   z-index: 1000;
 }
@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-    background: transparent;
+  background: var(--color-bg);
   color: var(--color-text);
   align-items: center;
   transition:  0.3s;

@@ -2,12 +2,17 @@
   padding: 4rem 2rem;
   background-color: var(--color-bg);
   text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+    transition: background 0.3s ease, color 0.3s ease;
+
 }
 
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: var(--color-primary-dark);
+  color: var(--color-text);
 }
 
 .attorneys-grid {
@@ -34,8 +39,8 @@
   height: 120px;
   margin: 0 auto 1rem auto;
   overflow: hidden;
-  border-radius: 50%;
-  border: 3px solid var(--color-primary);
+  border-radius: 5%;
+  border: 2px solid var(--color-accent);
 }
 
 .attorney-image {
@@ -47,7 +52,6 @@
 .attorney-name {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--color-primary);
   margin-bottom: 0.3rem;
 }
 

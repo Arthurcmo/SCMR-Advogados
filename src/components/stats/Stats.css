@@ -1,7 +1,10 @@
 .stats-container {
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 6rem ;
     color: var(--color-text);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .stats-title {

@@ -30,11 +30,11 @@ const ContactPage = () => {
           method="POST"
         >
           <div className="form-group">
-            <input type="text" name="name" placeholder="Nome" required />
-            <input type="email" name="email" placeholder="E-mail" required />
+            <input type="text" name="name" placeholder="Nome *" required />
+            <input type="email" name="email" placeholder="E-mail *" required />
           </div>
           <div className="form-group">
-            <input type="tel" name="phone" placeholder="Telefone" />
+            <input type="tel" name="phone" placeholder="Telefone *" required/>
             <input type="text" name="company" placeholder="Empresa" />
           </div>
           <div className="form-group">
@@ -43,7 +43,7 @@ const ContactPage = () => {
             <input type="text" name="country" placeholder="País" />
           </div>
           <div className="form-group">
-            <select name="source" placeholder="Como nos Conheceu?" required>
+            <select name="source" placeholder="Como nos Conheceu?" >
               <option value="">Como nos conheceu?</option>
               <option value="indicação">Indicação</option>
               <option value="linkedin">LinkedIn</option>
@@ -53,7 +53,7 @@ const ContactPage = () => {
             </select>          
           </div>
           <div className="form-group">
-            <input type="text" name="subject" placeholder="Assunto"  />
+            <input type="text" name="subject" placeholder="Assunto *" required />
           </div>
           <input type="hidden" name="_next" value="http://localhost:5173/obrigado" /> 
           <textarea name="message" placeholder="Mensagem" rows="5" required></textarea>

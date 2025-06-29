@@ -45,7 +45,7 @@ const BlogList = () => {
 
   return (
     <div className="blog-list">
-      <h2>📚 Blog </h2>
+      <h2> Blog </h2>
       {posts.map(post => (
         <div key={post.slug} className="blog-preview" onClick={() => navigate(`/blog/${post.slug}`)}>
           <h2>

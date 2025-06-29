@@ -52,14 +52,14 @@ const Home = () =>
                 }
                 `}</script>
             </Helmet>
-        <div>
-            <Hero />
-            <Stats />
-            <PracticeAreas/>
-            <Attorneys/>
-            <CTA/>
-            <BlogList/>
-        </div>
+            <div >
+                <Hero />
+                <Stats />
+                <PracticeAreas/>
+                <Attorneys/>
+                <CTA/>
+                <BlogList/>
+            </div>
         </>
     );
 };

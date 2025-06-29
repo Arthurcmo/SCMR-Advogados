@@ -13,7 +13,6 @@
   margin-bottom: 1.5rem;
   border-bottom: 2px solid var(--color-primary);
   padding-bottom: 0.5rem;
-  color: var(--color-primary);
 }
 
 .blog-preview {
@@ -38,8 +37,7 @@
 }
 
 .blog-preview a {
-  text-decoration: none;
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 .blog-preview a:hover {

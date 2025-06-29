@@ -1,6 +1,7 @@
 .contact-container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 2rem;
     padding: 3rem;
     font-family: 'Segoe UI', sans-serif;
@@ -51,6 +52,7 @@
   border-radius: 12px;
   box-shadow: 0 2px 5px var(--shadow-accent);
   transition: background-color 0.3s, color 0.3s;
+    font-family: 'Urbanist', sans-serif;
 
 }
 select {
@@ -62,6 +64,12 @@ select {
   background-color: #fff;
   color: #333;
   font-family: inherit;
+  font-family: 'Urbanist', sans-serif;
+
+}
+input{
+    font-family: 'Urbanist', sans-serif;
+
 }
 
 select:focus {
@@ -136,6 +144,11 @@ h2 {
 
 .socials a:hover {
   text-decoration: underline;
+}
+
+textarea{
+    font-family: 'Urbanist', sans-serif;
+
 }
 
 /* Responsividade para telas menores (celulares) */
