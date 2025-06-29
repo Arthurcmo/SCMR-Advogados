@@ -36,32 +36,29 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  padding: 0 1rem;
   width: 100%;
   height: max-content;
   background:  linear-gradient(180deg,var(--color-bg), rgba(0,0,0,0));
   height: 100%;
   transition:  0.3s;
-
 ;
 }
 
 .hero-content h1 {
   font-size: 5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: -1rem;
   font-family: 'Urbanist', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   transition:  0.3s;
 
 }
 
 .hero-content h2 {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 1rem;
   font-family: 'Urbanist', sans-serif;
-  font-weight: 300;
   transition:  0.3s;
 
 }

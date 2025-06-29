@@ -49,7 +49,7 @@ const BlogList = () => {
       {posts.map(post => (
         <div key={post.slug} className="blog-preview" onClick={() => navigate(`/blog/${post.slug}`)}>
           <h2>
-            <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+          <Link to={`/blog/${post.slug}`}>{post.title}</Link>
           </h2>
           <small>{new Date(post.date).toLocaleDateString()}</small>
           <p>{post.excerpt}</p>
