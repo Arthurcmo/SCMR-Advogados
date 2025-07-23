@@ -29,7 +29,7 @@ function Navbar() {
       
       <div  className={` ${scrolled ? 'navbar-logo' : 'navbar-logo'}`}>
         <Link to="/">
-          <img src={isDark ? '/01-cropped.svg' : '/05-cropped.svg'} className={` ${scrolled ? 'navbar-logo' : 'navbar-logo'}`}  />       
+          <img src={isDark ? '/05-cropped.svg' : '/05-cropped.svg'} className={` ${scrolled ? 'navbar-logo' : 'navbar-logo'}`}  />       
         </Link>
       </div>
 
