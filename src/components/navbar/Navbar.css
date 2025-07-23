@@ -2,33 +2,33 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
-  background: linear-gradient(135deg, var(--color-navbar), var(--color-bg));
+  padding: 2rem 2rem;
+  background: var(--color-bg);
   color: var(--color-text);
   align-items: center;
   transition:  0.3s;
   box-shadow: 0 2px 5px var(--shadow-accent);
-  position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .navbar-top {
   display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
+  justify-content: space-around;
+  padding: 2.5rem 12rem;
   background: var(--color-bg);
   color: var(--color-text);
   align-items: center;
   transition:  0.3s;
-   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .navbar-logo {
   font-weight: bold;
-  height: 80px;
+  position: relative;
+  top: -0.5rem;
+    height: 80px;
     z-index: 9999;
 
 }
@@ -45,7 +45,7 @@
 }
 
 .navbar-logo-text {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-text);
@@ -65,40 +65,30 @@
   align-items: center;
 }
 
+.navbar-links .navbar-links-left {
+  display: flex;
+  gap: 5rem;
+  font-weight: 400;
+  position: relative;
+  left: -3rem;
+  top: 0.5rem;
+}
+
 .navbar-links a {
-   color: var(--color-text);
+  color: var(--color-text);
   text-decoration: none;
   font-size: 1rem;
 }
 
-.navbar-links .btn-contato,
-.navbar-links .btn-noticias {
-  padding: 0.5rem 1rem;
-  background-color: var(--color-primary);
-  border: var(--color-accent) 1px solid;
-  border-radius: 5px;
-  color: var(--color-text);
-  transition:0.3s;
-  box-shadow: 0 2px 5px var(--shadow-accent);
-}
 
-.navbar-links .btn-contato:hover,
-.navbar-links .btn-noticias:hover {
-  background-color: var(--color-primary-dark);
-}
-
-
-.button {
-  background: var(--color-primary);
-  color: white;
-  padding: 0.75rem 1.5rem;
+.navbar .button {
+  background: var(--color-navbar);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 200;
+  color: var(--color-text);
   border: none;
-  border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   min-width: 3rem;
   display: flex;
   justify-content: center;
@@ -106,22 +96,25 @@
 }
 
 .button:hover {
-  background: var(--color-primary-dark);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+   color: var(--color-primary);
+
 }
 
 .button:focus {
-  outline: 2px solid var(--color-primary-light);
-  outline-offset: 2px;
+  color: var(--color-primary);
 }
 
 
 /* Ícones de redes sociais */
 .navbar-socials a {
   color: var(--color-text);
-  font-size: 1.5rem;
+  font-size: 0.5rem;
   margin-right: 1rem;
   transition: color 0.3s ease-in-out;
+  position: relative;
+  top: -3rem;
+  right: 0;
+
 }
 
 .navbar-socials a:hover {
@@ -165,8 +158,7 @@ body.dark .navbar {
   left: 0;
   height: 100vh;
   width: 50vw;
-  max-width: 750px;
-  background :linear-gradient(135deg, var(--color-navbar), var(--color-bg));
+  background :var(--color-bg);
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
   padding: 7rem 0em;
   display: flex;
@@ -212,7 +204,7 @@ body.dark .navbar {
 }
 
 .navbar-mobile-toggle {
-  display: block;
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -220,15 +212,21 @@ body.dark .navbar {
     display: block;
   }
 
+  .navbar-top{
+    padding: 2.5rem 0 ;
+  }
+
   .navbar-links {
     display: none;
   }
+  .button {
+    display: none;
+  }
   .navbar-sidebar {
-    width: 100%;
+    width: 100vw;
     max-width: none;
     clip-path: none;
     transition: transform 0.3s ease-in-out, clip-path 0.3s ease-in-out;
-    
   }
   
 }

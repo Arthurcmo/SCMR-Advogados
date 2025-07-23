@@ -18,25 +18,19 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-        <div className="footer-brand" onClick={() => handleNavigate()} style={{ cursor: 'pointer' }}>
-          <img src={isDark ? '/01-cropped.svg' : '/05-cropped.svg'} alt="SCM Advogados Logo" className="footer-logo" />
-        </div>
-
         <div className="footer-links">
-          <Link to="/about">Sobre Nós</Link>
-          <Link to="/practice-areas">Áreas de Atuação</Link>
-          <Link to="/attorneys">Equipe</Link>
-          <Link to="/contact">Contato</Link>
+          <p>Email: contato@scmadvogados.com</p>
+          <p>Telefone: (41) 98807-7655</p>
+          <p>Curitiba - PR</p>
+          <p>Rua Tibagi 576, Sala 607</p>
         </div>
 
         <div className="footer-contact">
-          <p>Email: contato@scmadvogados.com</p>
-          <p>Telefone: (41) 99999-9999</p>
-          <p>Curitiba - PR</p>
+          
         </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} SCM Advogados. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} SCMR Advogados. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

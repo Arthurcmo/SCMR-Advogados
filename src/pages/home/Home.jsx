@@ -3,13 +3,11 @@ import Hero from '../../components/hero/Hero';
 import Stats from '../../components/stats/Stats';
 import PracticeAreas from '../../components/practiceareas/PracticeAreas';
 import Attorneys from '../../components/attorneys/Attorneys';
-// import News from '../../components/News';
-// import Prizes from '../../components/Prizes';
-// import Footer from '../../components/Footer';
 import CTA from '../../components/cta/CTA';
 import Footer from '../../components/footer/Footer';
 import BlogList from '../../components/bloglist/BlogList';
 import Helmet from 'react-helmet';
+import ContactPage from '../../pages/contact/ContactPage';
 
 const Home = () => 
     {
@@ -54,10 +52,6 @@ const Home = () =>
             </Helmet>
             <div >
                 <Hero />
-                <Stats />
-                <PracticeAreas/>
-                <Attorneys/>
-                <CTA/>
                 <BlogList/>
             </div>
         </>

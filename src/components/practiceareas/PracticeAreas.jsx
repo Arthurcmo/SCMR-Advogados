@@ -1,46 +1,69 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './PracticeAreas.css';
 
 const practiceAreas = [
-  {
-    title: "Civil Litigation",
-    description: "Representing clients in civil disputes with professionalism and strategy.",
-  },
-  {
-    title: "Corporate Law",
-    description: "Advising businesses on structure, contracts, and compliance.",
-  },
-  {
-    title: "Family Law",
-    description: "Handling sensitive family matters with compassion and discretion.",
-  },
-  {
-    title: "Criminal Defense",
-    description: "Protecting your rights with experienced and dedicated defense.",
-  },
-  {
-    title: "Real Estate Law",
-    description: "Ensuring secure and fair property transactions.",
-  },
-  {
-    title: "Labor & Employment",
-    description: "Navigating employer and employee rights with clarity.",
-  }
+  { title: "Civil Litigation", description: "Lorem ipsum dolor sit amet..." },
+  { title: "Corporate Law", description: "Advising businesses on structure..." },
+  { title: "Family Law", description: "Handling sensitive family matters..." },
+  { title: "Criminal Defense", description: "Protecting your rights..." },
+  { title: "Real Estate Law", description: "Ensuring secure property transactions." },
+  { title: "Labor & Employment", description: "Navigating employer/employee rights." },
 ];
 
 const PracticeAreas = () => {
+  const [selectedArea, setSelectedArea] = useState(null);
+
   return (
-    <section className="practice-areas">
-      <h2 className="section-title">Áreas de Atuação</h2>
-      <div className="areas-grid">
-        {practiceAreas.map((area, index) => (
-          <div className="area-card" key={index}>
-            <h3>{area.title}</h3>
-            <p>{area.description}</p>
-          </div>
-        ))}
+    <div className="practice-wrapper">
+      {/* First row */}
+      <div className="side-blank" />
+      <div className="image-section">
+        <img src="/buildings2.jpg" alt="Law Firm" className="hero-image" />
       </div>
-    </section>
+      <div className="side-right" />
+
+      {/* Second row */}
+      <div className="left-color" />
+      <div className="content-wrapper">
+        <div className="left-panel">
+          <h3 className="practice-areas-h3">ÁREAS DE</h3>
+          <h3 className="practice-areas-h3">ATUAÇÃO</h3>
+
+          <ul className="practice-areas-list">
+            {practiceAreas.map((area, index) => (
+              <li
+                key={index}
+                onClick={() => setSelectedArea(index)}
+                style={{
+                  cursor: 'pointer',
+                  color: selectedArea === index ? 'var(--color-primary)' : '#676'
+                }}
+              >
+                <p>{area.title}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="right-panel">
+          {selectedArea !== null && (
+            <button
+              onClick={() => setSelectedArea(null)}
+              className="close-button"
+            >
+              ←
+            </button>
+          )}
+          <h2>{selectedArea !== null ? practiceAreas[selectedArea].title : 'Atuação'}</h2>
+          <p>
+            {selectedArea !== null
+              ? practiceAreas[selectedArea].description
+              : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quidem quod incidunt...'}
+          </p>
+        </div>
+      </div>
+      <div className="side-right bottom" />
+    </div>
   );
 };
 

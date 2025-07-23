@@ -18,12 +18,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<About/>} />
-        <Route path="/blog" element={<>
-                                    <h1 className="page-header">Blog</h1>
+        <Route path="/publicacoes" element={<>
+                                    <h1 className="page-header">Publicações</h1>
                                     <BlogList />
                                     </>} />
         <Route path="/blog/:slug" element={<BlogPost />} />
-        <Route path="/contato" element={<ContactPage/>} />
+        <Route path="/contato" element={<h1 style={{textAlign:'center', width:'100%'}}>Contato</h1>} />
         <Route path="/obrigado" element={<Thanks />} />
         <Route path="servicos" element={<PracticeAreas />} />
         <Route path="equipe" element={<>
@@ -32,6 +32,7 @@ function App() {
                                     </>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <ContactPage/>
       <Footer />
     </>
   );
