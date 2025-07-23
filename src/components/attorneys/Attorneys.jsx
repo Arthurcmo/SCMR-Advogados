@@ -26,31 +26,29 @@ const Attorneys = () => {
   const [selectedAttorney, setSelectedAttorney] = useState(null);
 
   return (
-    <div className="attorneys-wrapper">
-      {/* Linha 1 */}
-      <div className="side-blank" />
-      <div className="image-section">
+    <div className="att-wrapper">
+      <div className="att-blank" />
+      <div className="att-image-section">
         <img
-          src={selectedAttorney !== null ? attorneys[selectedAttorney].image : "/team.jpg"}
+          src={"/attorneysAlt.jpg"}
           alt="Equipe"
-          className="hero-image"
+          className="att-hero-image"
         />
       </div>
-      <div className="side-right" />
+      <div className="att-side-grey" />
 
-      {/* Linha 2 */}
-      <div className="left-color" />
-      <div className="content-wrapper">
-        <div className="left-panel">
-          <h3 className="practice-areas-h3">SÓCIOS</h3>
-          <ul className="practice-areas-list">
+      <div className="att-color-left" />
+      <div className="att-content">
+        <div className="att-list-panel">
+          <h3 className="att-heading">SÓCIOS</h3>
+          <ul className="att-list">
             {attorneys.map((attorney, index) => (
               <li
                 key={index}
                 onClick={() => setSelectedAttorney(index)}
                 style={{
                   cursor: 'pointer',
-                  color: selectedAttorney === index ? 'var(--color-primary)' : '#676'
+                  color: selectedAttorney === index ? '#234' : '#fff'
                 }}
               >
                 <p>{attorney.name}</p>
@@ -59,9 +57,9 @@ const Attorneys = () => {
           </ul>
         </div>
 
-        <div className="right-panel">
+        <div className="att-detail-panel">
           {selectedAttorney !== null && (
-            <button onClick={() => setSelectedAttorney(null)} className="close-button">
+            <button onClick={() => setSelectedAttorney(null)} className="att-close-btn">
               ←
             </button>
           )}
@@ -74,7 +72,16 @@ const Attorneys = () => {
           </p>
         </div>
       </div>
-      <div className="side-right bottom" />
+
+      <div className="att-detail-image">
+        {selectedAttorney !== null && (
+          <img
+            src={attorneys[selectedAttorney].image}
+            alt={attorneys[selectedAttorney].name}
+            className="att-attorney-image"
+          />
+        )}
+      </div>
     </div>
   );
 };

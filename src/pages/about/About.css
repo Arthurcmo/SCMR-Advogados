@@ -1,4 +1,4 @@
-.sobre-nos-container {
+.abt-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -6,132 +6,133 @@
   color: var(--color-text);
 }
 
-/* Layout principal com flexbox em duas linhas verticais */
-.sobre-nos-layout {
+/* Layout principal */
+.abt-layout {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-/* Colunas padrão */
-.col {
+/* Colunas */
+.abt-col {
   display: flex;
   flex-shrink: 0;
 }
 
 /* Primeira linha */
-.side-color {
+.abt-color-left {
   width: 10%;
   height: 400px;
   background-color: var(--color-primary);
 }
 
-.image-area {
+.abt-image-area {
   width: 73%;
   height: 400px;
   align-items: center;
   justify-content: center;
 }
 
-.hero-image {
+.abt-hero-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-/* Espaço à direita da imagem */
-.right-space {
+/* Espaço à direita */
+.abt-space-right {
   width: 17%;
   height: 400px;
 }
 
 /* Segunda linha */
-.short {
+.abt-short {
   height: 135px;
 }
 
-.content-area {
+.abt-content-area {
   width: 73%;
   height: 600px;
   display: flex;
   flex-direction: row;
 }
 
-.heading-area {
+.abt-heading {
   width: 40%;
   background-color: var(--color-primary);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 1rem;
-  height:135px
+  height: 135px;
 }
 
-.heading-area h2 {
+.abt-heading h2 {
   color: white;
   margin: 0;
 }
 
-.sobre {
+.abt-body-text {
   width: 60%;
   background-color: #fff;
   height: 600px;
-
 }
 
-.sobre p{
-    margin-left: auto;
-    margin-right: auto;
+.abt-body-text p {
+  margin-left: auto;
+  margin-right: auto;
 }
-.right-space.tall {
+
+.abt-tall {
   height: 600px;
   background-color: #fff;
 }
 
-/* Responsivo */
+/* 📱 Responsivo */
 @media (max-width: 768px) {
-  .sobre-nos-layout {
+  .abt-layout {
     flex-direction: column;
   }
 
-  .side-color,
-  .image-area,
-  .right-space,
-  .short,
-  .tall {
+  .abt-color-left,
+  .abt-image-area,
+  .abt-space-right,
+  .abt-short,
+  .abt-tall {
     width: 100%;
     height: auto;
   }
 
-  .image-area {
+  .abt-image-area {
     height: 250px;
   }
 
-  .content-area {
+  .abt-content-area {
     flex-direction: column;
     width: 100%;
     height: auto;
   }
 
-  .heading-area,
-  .sobre {
+  .abt-heading,
+  .abt-body-text {
     width: 100vw;
     height: auto;
-    padding: 0rem;    
+    padding: 0rem;
   }
 
-  .heading-area{
+  .abt-heading {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .heading-area h2{
+
+  .abt-heading h2 {
     font-size: 1.5rem;
     padding: 2rem 0.5rem;
   }
 
-  .sobre {
+  .abt-body-text {
     padding: 2rem 0rem;
     height: auto;
   }

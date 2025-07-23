@@ -18,18 +18,20 @@
 
 body.dark {
   /* Modo escuro */
-  --color-bg: #151210;                    /* Fundo escuro */
-  --color-bg-negative: #EFE4DC;           /* Fundo invertido */
-  --color-text: #EFE4DC;                  /* Texto claro */
-  --color-primary: #FF700F;               /* Laranja mantido */
-  --color-primary-light: #FFA05A;         /* Laranja mais suave para hover */
-  --color-primary-dark: #CC5900;          /* Laranja mais escuro */
-  --color-secondary: #1E1A18;             /* Fundo secundário escuro */
-  --color-accent: #EFE4DC;                /* Detalhes claros */
-  --shadow-accent: rgba(239, 228, 220, 0.15); /* Sombra clara */
-  --color-navbar: #1E1A18;                /* Navbar escura com leve contraste */
-  --gradient-navbar: linear-gradient(90deg, #1E1A18, #151210);
-  --color-border: #8C7C6E;                /* Bege escuro para bordas em dark mode */
+  --color-bg: #F4F3F3;                    /* Fundo principal claro */
+  --color-bg-grey: #ddd; 
+  --color-bg-negative: #1E1A18;           /* Marrom escuro suavizado para contraste */
+  --color-text: #151210;                  /* Texto escuro */
+  --color-primary: #FF700F;               /* Laranja principal */
+  --color-primary-light: #FFA05A;         /* Laranja claro para hover/botão */
+  --color-primary-dark: #CC5900;          /* Laranja escuro para contraste */
+  --color-secondary: #1B2E33;             /* Bege um pouco mais escuro (card) */
+  --color-accent: #2A201C;                /* Acento marrom mais visível */
+  --shadow-accent: rgba(21, 18, 16, 0.2); /* Sombra escura leve */
+  --color-navbar: #FFFFFF;                /* Navbar branca para separar visualmente */
+  --gradient-navbar: linear-gradient(90deg, #FFFFFF, #EFE4DC);
+  --color-border: #B89E8B;                /* Bege acinzentado para bordas */
+  --color-text-dark: #676;               /* Bege escuro para bordas em dark mode */
 }
 
 

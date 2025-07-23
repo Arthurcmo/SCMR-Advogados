@@ -4,7 +4,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="sobre-nos-container">
+    <div className="abt-container">
       <Helmet>
         <title>Sobre Nós | Sovierzoski | Carleial | Magnabosco Advogados</title>
         <meta
@@ -24,32 +24,32 @@ const About = () => {
         <meta name="twitter:image" content="https://www.seusite.com.br/imagens/logo-social.jpg" />
       </Helmet>
 
-      <div className="sobre-nos-layout">
+      <div className="abt-layout">
         {/* Linha 1 */}
-        <div className="col side-color" />
-        <div className="col image-area">
+        <div className="abt-col abt-color-left" />
+        <div className="abt-col abt-image-area">
           <img
             src="/buildings1.jpg"
             alt="Law Firm"
-            className="hero-image"
+            className="abt-hero-image"
           />
         </div>
-        <div className="col right-space" />
+        <div className="abt-col abt-space-right" />
 
         {/* Linha 2 */}
-        <div className="col side-color short" />
-        <div className="col content-area">
-          <div className="heading-area">
+        <div className="abt-col abt-color-left abt-short" />
+        <div className="abt-col abt-content-area">
+          <div className="abt-heading">
             <h2>Sobre</h2>
             <h2>o escritório</h2>
           </div>
-          <div className="sobre">
+          <div className="abt-body-text sobre">
             <p>
               O escritório Sovierzoski | Carleial | Magnabosco Advogados é formado por uma equipe de advogados com sólida formação acadêmica e experiência prática, atuando em diversas áreas do Direito. Nossa missão é oferecer soluções jurídicas personalizadas, com foco na ética, transparência e excelência no atendimento.
             </p>
           </div>
         </div>
-        <div className="col right-space tall" />
+        <div className="abt-col abt-space-right abt-tall" />
       </div>
     </div>
   );
