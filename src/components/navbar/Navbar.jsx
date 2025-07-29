@@ -38,9 +38,9 @@ function Navbar() {
         <div className='navbar-links-left'>
           <Link to="/sobre" className="button">Sobre</Link>
           <Link to="/servicos" className="button">Atuação</Link>
-          <Link to="/contato" className="button">Contato</Link>
           <Link to="/equipe" className="button">Equipe</Link>
           <Link to="/publicacoes" className="button">Publicações</Link>
+          <Link to="/contato" className="button">Contato</Link>
         </div>
         <div className="navbar-socials">
           <a href="https://wa.me/5541988077655" target="_blank" rel="noopener noreferrer"><FaWhatsapp size={20} /></a>
@@ -59,9 +59,9 @@ function Navbar() {
             <Link to="/">Início</Link>
             <Link to="/sobre">Sobre</Link>
             <Link to="/servicos">Atuação</Link>
-            <Link to="/contato">Contato</Link>
             <Link to="/equipe">Equipe</Link>
             <Link to="/publicacoes">Publicações</Link>
+            <Link to="/contato">Contato</Link>
           </div>
         </>
       )}

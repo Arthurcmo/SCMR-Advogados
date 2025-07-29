@@ -65,22 +65,9 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-  .publications-content,
-  .left-panel,
-  .right-panel,
-  .image-section,
-  .side-blank,
-  .side-right,
-  .side-right.bottom,
-  .left-color {
-    width: 100%;
-    min-height: auto;
-    padding: 1rem;
-  }
+  
 
-  .right-panel {
-    padding: 2rem;
-  }
+
 
   .publications-layout {
     margin-top: 1rem;
