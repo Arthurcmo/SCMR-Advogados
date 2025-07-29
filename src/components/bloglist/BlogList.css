@@ -1,18 +1,57 @@
 .blog-list {
-  max-width: 900px;
-  margin: 0 17vw;
+  
+  margin: 0 0;
+  margin-left: 17vw;
   background-color: var(--color-bg);
   color: var(--color-secondary);
   transition: background-color 0.3s, color 0.3s;
 }
 
 /* Container flex que preserva ordem: texto à esquerda, imagem à direita */
+
+/* Blog preview: 40% of 66vw = 26.4vw */
+.blog-preview {
+  flex: 0 0 26.4vw;
+  max-width: 26.4vw;
+}
+
+/* Blog image: 60% of 66vw = 39.6vw */
+.blog-image {
+  flex: 0 0 39.6vw;
+  width: 39.6vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Digital: 17vw */
+.digital {  
+  width: 17vw;
+  max-width: 17vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digital img {
+  position: relative;
+  overflow: hidden;
+}
 .blog-flex-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 2rem;
-  flex-wrap: nowrap;
+  gap: 0rem;
+  flex-wrap: wrap;
 }
 
 .blog-header{
@@ -22,15 +61,18 @@
 /* Conteúdo textual */
 .blog-preview {
   flex: 1;
-  padding: 1rem;
+  padding: 1rem 0;
+  padding-left: 0.5rem;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  max-width: 26.4vw;
+  flex-wrap: wrap;
 }
 
 .blog-preview h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--color-secondary);
 }
 
@@ -42,7 +84,8 @@
 
 .blog-preview p {
   color: var(--color-text);
-  margin: 0.5rem 0 1rem;
+  margin: 0.5rem 0 ;
+  word-break: break-word;
 }
 
 .blog-preview a {
@@ -100,53 +143,75 @@
   background: var(--color-primary);
 }
 
-/* Imagem do post à direita */
-.blog-image {
-  width: auto;
-  max-width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 1rem;
-}
 
-.blog-image img {
-  width: auto;
-  height: 300px;
-  object-fit: contain;
-}
-
-/* Responsivo: mantém ordem, mas empilha verticalmente */
+/* Responsivo: empilha verticalmente, imagem ocupa 100vw, remove .digital */
 @media (max-width: 768px) {
+
+  .blog-list {
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+  }
   .blog-flex-container {
     flex-direction: column;
     align-items: center;
+    background-color: var(--color-primary);
   }
 
-  .blog-header{
+  .blog-header {
     display: block;
     text-align: center;
     margin-bottom: 2rem;
     font-size: 1rem;
-    color: var(--color-secondary);  
+    color: white;
     letter-spacing: 0.3rem;
-    font-weight: bold;
+    font-weight: bold;  
+    
   }
 
-  .blog-preview,
+  .blog-preview {
+    width: 100vw;
+    padding: 1.5rem 0;
+    max-width: 100vw;
+    background-color: var(--color-primary);
+    color: #ccc;
+  }
+
   .blog-image {
     width: 100vw;
-    padding: 1.5rem 0 ;
-  }
-
-  .blog-image  {
+    max-width: 100vw;
     height: auto;
-    width: 100vw;
-    background:none;
+    background: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
+  
+  .blog-preview h2{
+    color: white;
+  }
+  .blog-preview p{
+    color: white;
+    padding: 0 0.5rem;
+  }
+  .blog-preview a{
+    color: white;
+    padding: 0 0.5rem;
+  }
+  .blog-image img {
+    width: 100vw;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  /* Remove .digital */
+  .digital {
+    display: none !important;
+  }
 
   .blog-navigation {
     flex-direction: row;

@@ -3,7 +3,7 @@
   --color-bg: #F4F3F3;                    /* Fundo principal claro */
   --color-bg-grey: #ddd; 
   --color-bg-negative: #1E1A18;           /* Marrom escuro suavizado para contraste */
-  --color-text: #151210;                  /* Texto escuro */
+  --color-text: #333;                  /* Texto escuro */
   --color-primary: #FF700F;               /* Laranja principal */
   --color-primary-light: #FFA05A;         /* Laranja claro para hover/botão */
   --color-primary-dark: #CC5900;          /* Laranja escuro para contraste */
@@ -39,7 +39,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 

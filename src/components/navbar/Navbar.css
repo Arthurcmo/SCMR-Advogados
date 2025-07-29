@@ -2,20 +2,22 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 2rem;
+  padding: 2rem 0rem;
   background: var(--color-bg);
   color: var(--color-text);
   align-items: center;
   transition:  0.3s;
   box-shadow: 0 2px 5px var(--shadow-accent);
+  margin:0 17vw;
   top: 0;
   z-index: 1000;
 }
 
 .navbar-top {
   display: flex;
-  justify-content: space-around;
-  padding: 2.5rem 12rem;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+  margin: 0 17%;
   background: var(--color-bg);
   color: var(--color-text);
   align-items: center;
@@ -26,11 +28,40 @@
 
 .navbar-logo {
   font-weight: bold;
-  position: relative;
-  top: -0.5rem;
+  padding: 0;
+  margin: 0;
     height: 80px;
     z-index: 9999;
 
+}
+
+.navbar-dots {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: inline-block;
+  background: var(--color-primary);
+  transition: background 0.3s;
+}
+
+.dot-pale {
+  background: #FEB788;
+}
+
+.dot-mid {
+  background: #FE9B59;
+}
+
+.dot-primary {
+  background: #FE7E29;
 }
 
 .navbar-top-logo{
@@ -38,14 +69,13 @@
   font-weight: bold;
   height: 160px;
   position: fixed;
-  left: 80px;
-  top: 80px;
-    z-index: 9999;
-
+  z-index: 9999;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar-logo-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-text);
@@ -67,10 +97,9 @@
 
 .navbar-links .navbar-links-left {
   display: flex;
-  gap: 5rem;
+  gap: 4rem;
   font-weight: 400;
   position: relative;
-  left: -3rem;
   top: 0.5rem;
 }
 
@@ -104,16 +133,20 @@
   color: var(--color-primary);
 }
 
+.navbar-socials{
+  display: flex;
+}
+
 
 /* Ícones de redes sociais */
 .navbar-socials a {
   color: var(--color-text);
   font-size: 0.5rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   transition: color 0.3s ease-in-out;
   position: relative;
   top: -3rem;
-  right: 0;
+  right: 1rem;
 
 }
 

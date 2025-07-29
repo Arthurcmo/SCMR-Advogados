@@ -53,7 +53,7 @@ const BlogList = () => {
   return (
     <div className="blog-list">
       <div className="blog-header">
-        NOTÍCIAS
+        NOTÍCIAS EM DESTAQUE
       </div>
       <div className="blog-flex-container">
         <div className="blog-preview">
@@ -81,9 +81,11 @@ const BlogList = () => {
         </div>
         <div className="blog-image">
           <img
-            src={post.image || '/law.jpg'}
-            alt={post.title}
+            src={post.image || '/botanico.jpg'} alt={post.title}
           />
+        </div>
+        <div className="digital">
+          <img src="/digital.png" alt="Digital" />
         </div>
       </div>
     </div>

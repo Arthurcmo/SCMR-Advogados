@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-
+import { Link } from 'react-router-dom';
 const Hero = () => {
     const images = [
         "/heronew1.jpg",
@@ -35,13 +35,14 @@ const Hero = () => {
             <div className="hero-row">
                 <div className="hero-side secondary" />
                 <div className="hero-info-wrapper">
-                    <div className="subtitle">NOTÍCIAS</div>
+                    <div className="subtitle">NOTÍCIAS EM DESTAQUE</div>
                     <div className="sobre" style={{padding:0}}>
                         <h2>Apresentação</h2>
                         <p>
                             Lorem ipsum dolorleniti necessitatibus eligendi quos rerum alias officiis optio facilis. Officiis eaque porro fuga illum odio enim impedit.
                         </p>
-                        <a href='/sobre'>Saiba mais</a>
+                        <Link to="/sobre" className="button">Saiba mais</Link>
+
                     </div>
                 </div>
                 <div className="hero-side" />

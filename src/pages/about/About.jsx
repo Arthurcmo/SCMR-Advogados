@@ -24,33 +24,30 @@ const About = () => {
         <meta name="twitter:image" content="https://www.seusite.com.br/imagens/logo-social.jpg" />
       </Helmet>
 
-      <div className="abt-layout">
-        {/* Linha 1 */}
-        <div className="abt-col abt-color-left" />
-        <div className="abt-col abt-image-area">
-          <img
-            src="/buildings1.jpg"
-            alt="Law Firm"
-            className="abt-hero-image"
-          />
-        </div>
-        <div className="abt-col abt-space-right" />
+      <div className="practice-wrapper">
+  {/* First row */}
+  <div className="side-blank" />
+  <div className="image-section">
+    <img src="/buildings1.jpg" alt="Law Firm" className="hero-image" />
+  </div>
+  <div className="side-right" />
 
-        {/* Linha 2 */}
-        <div className="abt-col abt-color-left abt-short" />
-        <div className="abt-col abt-content-area">
-          <div className="abt-heading">
-            <h2>Sobre</h2>
-            <h2>o escritório</h2>
-          </div>
-          <div className="abt-body-text sobre">
-            <p>
-              O escritório Sovierzoski | Carleial | Magnabosco Advogados é formado por uma equipe de advogados com sólida formação acadêmica e experiência prática, atuando em diversas áreas do Direito. Nossa missão é oferecer soluções jurídicas personalizadas, com foco na ética, transparência e excelência no atendimento.
-            </p>
-          </div>
-        </div>
-        <div className="abt-col abt-space-right abt-tall" />
-      </div>
+  {/* Second row */}
+  <div className="left-color" />
+  <div className="content-wrapper">
+    <div className="left-panel">
+      <h3 className="practice-areas-h3">SOBRE</h3>
+      <h3 className="practice-areas-h3">O ESCRITÓRIO</h3>
+    </div>
+    <div className="right-panel">
+      <p>
+        O escritório Sovierzoski | Carleial | Magnabosco Advogados é formado por uma equipe de advogados com sólida formação acadêmica e experiência prática, atuando em diversas áreas do Direito. Nossa missão é oferecer soluções jurídicas personalizadas, com foco na ética, transparência e excelência no atendimento.
+      </p>
+    </div>
+  </div>
+  <div className="side-right bottom" />
+</div>
+
     </div>
   );
 };

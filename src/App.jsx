@@ -7,6 +7,7 @@ import ContactPage from "./pages/contact/ContactPage";
 import Footer from "./components/footer/Footer";
 import Thanks from "./pages/thanks/Thanks";
 import BlogList from "./components/bloglist/BlogList";
+import PublicationList from "./components/publications/Publications";
 import PracticeAreas from "./components/practiceareas/PracticeAreas";
 import Attorneys from "./components/attorneys/Attorneys";
 import NotFound from "./pages/notfound/NotFound";
@@ -20,7 +21,7 @@ function App() {
         <Route path="/sobre" element={<About/>} />
         <Route path="/publicacoes" element={<>
                                     <h1 className="page-header">Publicações</h1>
-                                    <BlogList />
+                                    <PublicationList />
                                     </>} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/contato" element={<h1 style={{textAlign:'center', width:'100%'}}>Contato</h1>} />
