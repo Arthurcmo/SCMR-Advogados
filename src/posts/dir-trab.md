@@ -5,6 +5,5 @@ author: "Dr Leonardo Sovierzoski"
 excerpt: "Se você é empregado com carteira assinada, é importante saber que..."
 ---
 
-# Entenda Seus Direitos Trabalhistas
 
 Se você é empregado com carteira assinada, é importante saber que...

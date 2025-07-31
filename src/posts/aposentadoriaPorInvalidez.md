@@ -5,7 +5,6 @@ author: "Dr. Carleial"
 excerpt: "Veja quais são os requisitos e etapas para solicitar a aposentadoria por invalidez no INSS."
 ---
 
-# Como Funciona a Aposentadoria por Invalidez
 
 A aposentadoria por invalidez é um benefício concedido ao segurado que, por doença ou acidente, fica permanentemente incapaz de trabalhar.
 

@@ -5,7 +5,6 @@ author: "Dr. Carleial"
 excerpt: "Saiba quais são os direitos e deveres dos envolvidos em um acidente de trânsito."
 ---
 
-# Responsabilidade Civil em Acidentes de Trânsito
 
 Acidentes de trânsito podem gerar diversas implicações jurídicas, especialmente no campo da responsabilidade civil.
 

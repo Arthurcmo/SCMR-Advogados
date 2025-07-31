@@ -5,7 +5,6 @@ author: "Dr. Magnabosco"
 excerpt: "Entenda como funciona o processo de inventário e a partilha de bens entre herdeiros."
 ---
 
-# Herança e Inventário: O Que Você Precisa Saber
 
 O falecimento de um ente querido envolve não apenas questões emocionais, mas também legais.
 

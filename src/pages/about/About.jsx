@@ -6,23 +6,37 @@ const About = () => {
   return (
     <div className="abt-container">
       <Helmet>
+        
         <title>Sobre Nós | Sovierzoski | Carleial | Magnabosco Advogados</title>
         <meta
-          name="description"
-          content="Conheça o escritório Sovierzoski | Carleial | Magnabosco Advogados, especialistas em Direito Digital, Empresarial, Trabalhista e Civil. Atuação ética, moderna e estratégica."
-        />
-        <meta name="keywords" content="advocacia, direito digital, LGPD, direito empresarial, PUC-PR, advogados Curitiba, direito civil, direito trabalhista" />
-        <meta name="author" content="Sovierzoski | Carleial | Magnabosco Advogados" />
-        <meta property="og:title" content="Sobre Nós | Sovierzoski | Carleial | Magnabosco Advogados" />
-        <meta property="og:description" content="Escritório fundado por advogados da PUC-PR com"/>
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.seusite.com.br/sobre" />
-        <meta property="og:image" content="https://www.seusite.com.br/imagens/logo-social.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Sobre Nós | Sovierzoski | Carleial | Magnabosco Advogados" />
-        <meta name="twitter:description" content="Conheça nossa história e especialidades jurídicas." />
-        <meta name="twitter:image" content="https://www.seusite.com.br/imagens/logo-social.jpg" />
-      </Helmet>
+         name="description"
+    content="Escritório full service em advocacia empresarial com foco em excelência, ética e inovação. Atuação estratégica em Direito Digital, Empresarial, Trabalhista e Civil."
+  />
+  <meta
+    name="keywords"
+    content="advocacia empresarial, direito digital, LGPD, direito trabalhista, direito civil, advogados Curitiba, escritório de advocacia, Sovierzoski Carleial Magnabosco"
+  />
+  <meta name="author" content="Sovierzoski | Carleial | Magnabosco Advogados" />
+
+  {/* Open Graph (Facebook / LinkedIn) */}
+  <meta property="og:title" content="Sobre Nós | Sovierzoski | Carleial | Magnabosco Advogados" />
+  <meta
+    property="og:description"
+    content="Conheça a história e os valores do nosso escritório de advocacia full service, referência em Direito Empresarial, Digital, Trabalhista e Civil."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.seusite.com.br/sobre" />
+  <meta property="og:image" content="https://www.seusite.com.br/imagens/logo-social.jpg" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sobre Nós | Sovierzoski | Carleial | Magnabosco Advogados" />
+  <meta
+    name="twitter:description"
+    content="Advocacia estratégica e moderna com compromisso ético e excelência técnica. Saiba mais sobre nossa atuação."/>
+  <meta name="twitter:image" content="https://site-advocacia-rust.vercel.app/favicon.jpg" />
+  
+  </Helmet>
 
       <div className="practice-wrapper">
   {/* First row */}

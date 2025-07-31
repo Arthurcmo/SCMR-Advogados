@@ -5,7 +5,6 @@ author: "Dr. Leonardo Sovierzoski"
 excerpt: "Guia rápido para entender seus direitos garantidos pela CLT."
 ---
 
-# Entenda Seus Direitos Trabalhistas
 
 
 A Consolidação das Leis do Trabalho (CLT) é o principal conjunto de normas que regula as relações entre empregados e empregadores no Brasil. Conhecer seus direitos é essencial para garantir uma relação de trabalho justa e equilibrada.

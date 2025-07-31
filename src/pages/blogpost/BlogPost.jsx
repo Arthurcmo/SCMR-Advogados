@@ -1,60 +1,37 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { Helmet } from "react-helmet";
 import matter from "gray-matter";
 import "./BlogPost.css";
+
 const BlogPost = () => {
   const { slug } = useParams();
   const [post, setPost] = useState(null);
 
-
   useEffect(() => {
-  async function fetchPost() {
-    console.log('📥 Buscando post...');
-    console.log('🔎 Slug atual:', slug);
+    async function fetchPost() {
+      const postFiles = import.meta.glob('../../posts/*.md', {
+        import: 'default',
+        query: '?raw'
+      });
 
-    const postFiles = import.meta.glob('../../posts/*.md', {
-      import: 'default',
-      query: '?raw'
-    });
-
-    const paths = Object.keys(postFiles);
-    console.log('📁 Arquivos encontrados:', paths);
-
-    let found = false;
-
-    for (const path of paths) {
-      console.log('🧪 Verificando:', path);
-
-      if (path.includes(`${slug}.md`)) {
-        console.log('✅ Match encontrado:', path);
-        try {
-          const rawContent = await postFiles[path]();
-          console.log('📄 Conteúdo bruto carregado.');
-
-          const { data, content } = matter(rawContent);
-          console.log('📦 Frontmatter:', data);
-
-          setPost({ ...data, content });
-          found = true;
+      for (const path in postFiles) {
+        if (path.includes(`${slug}.md`)) {
+          try {
+            const rawContent = await postFiles[path]();
+            const { data, content } = matter(rawContent);
+            setPost({ ...data, content });
+          } catch (err) {
+            console.error('Erro ao carregar post:', err);
+          }
           break;
-        } catch (err) {
-          console.error('❌ Erro ao carregar post:', err);
         }
       }
     }
 
-    if (!found) {
-      console.warn(`⚠️ Post com slug "${slug}" não encontrado.`);
-    }
-  }
-
-  fetchPost();
-}, [slug]);
-
-  
-
+    fetchPost();
+  }, [slug]);
 
   if (!post) return <div className="loading">⏳ Carregando artigo...</div>;
 
@@ -72,17 +49,57 @@ const BlogPost = () => {
   };
 
   return (
-    <div className="blog-container">
-      <Helmet>
-        <title>{post.title} | Sovierzoski | Carleial | Magnabosco Advogados</title>
-        <meta name="description" content={post.excerpt || post.content.slice(0, 160)} />
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Helmet>
+    <div className=" practice-wrapper publications-layout  ">
+      {/* Top Row */}
+      <div className="side-blank" />
+      <div className="image-section">
+        <img
+          src="/botanico.jpg"
+          alt="Artigo"
+          className="hero-image"
+        />
+      </div>
+      <div className="side-right" />
 
-      <small>{new Date(post.date).toLocaleDateString()}</small>
-      <ReactMarkdown>{post.content}</ReactMarkdown>
+      {/* Bottom Row */}
+      <div className="left-color" />
+      <div className="content-wrapper publications-content">
+        <div className="left-panel">
+          <h3 className="practice-areas-h3">PUBLICAÇÃO</h3>
+          <h3 className="practice-areas-h3">ARTIGO</h3>
+        </div>
+
+        <div className="right-panel">
+          <Helmet>
+            <title>{post.title} |SCMR Advogados</title>
+            <meta name="description" content={post.excerpt || post.content.slice(0, 160)} />
+            <script type="application/ld+json">
+              {JSON.stringify(structuredData)}
+            </script>
+          </Helmet>
+
+          {/* Botão de voltar */}
+          <div className="back-button-wrapper">
+            <Link to="/publicacoes" className="back-button">
+              ← Voltar às publicações
+            </Link>
+          </div>
+
+          <div className="publication-preview">
+            <h1>{post.title}</h1>
+            <small>{new Date(post.date).toLocaleDateString()}</small>
+            <div>
+              <span className="author"> por</span>
+              <span className="author-name"> {post.author}</span>
+            </div>
+            <hr className="custom-divider" />
+            <div className="blogPost">
+            <ReactMarkdown >{post.content}</ReactMarkdown>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="side-right bottom" />
     </div>
   );
 };

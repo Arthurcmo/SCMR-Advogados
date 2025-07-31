@@ -6,8 +6,15 @@
   min-height: 350px;
 }
 
-.blog-container h2 {
+.blog-container h1 {
   font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+.blog-container h2 {
+  font-size: 2rem;
   margin-bottom: 2rem;
   color: var(--color-primary);
   text-align: center;
@@ -66,4 +73,23 @@
 
 .blog-article a:hover {
   color: var(--color-primary-dark, #cc580b);
+}
+.back-button-wrapper {
+  margin-bottom: 1rem;
+}
+
+.back-button {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-button:hover {
+  color: var(--color-primary); /* ou qualquer cor de destaque */
+}
+
+
+.blogPost h2:hover {
+  color: var(--color-secondary) !important;
 }
