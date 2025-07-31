@@ -219,8 +219,8 @@ body.dark .navbar {
 }
 
 .navbar-sidebar a:hover {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+  color: var(--color);
+  background-color: var(--color-primary);
 }
 
 .close-btn {
@@ -256,10 +256,12 @@ body.dark .navbar {
     display: none;
   }
   .navbar-sidebar {
+    padding-top: 8rem;
     width: 100vw;
     max-width: none;
     clip-path: none;
     transition: transform 0.3s ease-in-out, clip-path 0.3s ease-in-out;
+    color: white;
   }
   
 }

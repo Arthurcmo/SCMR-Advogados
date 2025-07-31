@@ -157,6 +157,11 @@
     margin: 0;
     box-sizing: border-box;
   }
+  .sobre .button{
+    color: var(--color-primary);
+    display: block;
+    margin: auto;
+  }
 
   .sobre p {
     width: 90%;

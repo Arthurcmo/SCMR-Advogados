@@ -146,6 +146,7 @@ textarea{
 /* Responsividade para telas menores (celulares) */
 @media (max-width: 768px) {
   .contact-container {
+    
     flex-direction: column;
     padding: 0rem 0rem;
     width: 100vw;
@@ -155,6 +156,7 @@ textarea{
 
   .contact-form,
   .contact-info {
+    margin-top: 0;
     width: 80%;
     padding: 0rem;
     margin-left: auto;
@@ -190,6 +192,14 @@ textarea{
     margin-right: auto;
     display: block;
   }
+
+  .contact-form select {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0; /* remove arredondamento */
+  background: none;
+  padding: 0.5rem;
+}
 
   .contact-form button {
     width: 88%;

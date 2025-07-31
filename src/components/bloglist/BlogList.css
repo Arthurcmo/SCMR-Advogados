@@ -162,11 +162,9 @@
     display: block;
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 1rem;
-    color: white;
-    letter-spacing: 0.3rem;
-    font-weight: bold;  
-    
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    font-weight: 700;  
   }
 
   .blog-preview {
@@ -206,6 +204,10 @@
     height: auto;
     display: block;
     object-fit: cover;
+  }
+
+  .blog-dot.active{
+    border: 2px solid white;
   }
 
   /* Remove .digital */
