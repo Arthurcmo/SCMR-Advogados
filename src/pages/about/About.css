@@ -103,6 +103,10 @@
     height: auto;
   }
 
+  .image-section{
+    height: 150px;
+  }
+
   .abt-image-area {
     height: 250px;
   }

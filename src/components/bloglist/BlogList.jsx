@@ -53,14 +53,14 @@ const BlogList = () => {
   return (
     <div className="blog-list">
       <div className="blog-header">
-        NOTÍCIAS EM DESTAQUE
+        Notícias em Destaque
       </div>
       <div className="blog-flex-container">
         <div className="blog-preview">
           <h2>{post.title}</h2>
           <small>{new Date(post.date).toLocaleDateString()}</small>
           <p>{post.excerpt}</p>
-          <Link to={`/blog/${post.slug}`}>Saber mais</Link>
+          <Link to={`/blog/${post.slug}`}>Saiba mais</Link>
           <hr />
           <div className="blog-navigation">
             <button onClick={handlePrev} className="blog-nav-button" aria-label="Anterior">

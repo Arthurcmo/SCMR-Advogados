@@ -1,5 +1,5 @@
 .blog-list {
-  
+  width: 83vw;
   margin: 0 0;
   margin-left: 17vw;
   background-color: var(--color-bg);
@@ -68,23 +68,25 @@
   flex-direction: column;
   max-width: 26.4vw;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .blog-preview h2 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--color-secondary);
 }
 
 .blog-preview small {
   color: var(--color-muted);
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   margin: 0.5rem 0;
 }
 
 .blog-preview p {
   color: var(--color-text);
   margin: 0.5rem 0 ;
+  font-size: 0.8rem;
   word-break: break-word;
 }
 
@@ -161,10 +163,13 @@
   .blog-header {
     display: block;
     text-align: center;
+    width: 100vw;
     margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--color-secondary);
     font-weight: 700;  
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .blog-preview {
@@ -174,6 +179,11 @@
     background-color: var(--color-primary);
     color: #ccc;
   }
+  .blog-preview small {
+  color: var(--color-muted);
+  font-size: 0.7rem;
+  padding: 0 0.5rem ;
+}
 
   .blog-image {
     width: 100vw;

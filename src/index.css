@@ -13,7 +13,7 @@
   --color-navbar: #FFFFFF;                /* Navbar branca para separar visualmente */
   --gradient-navbar: linear-gradient(90deg, #FFFFFF, #EFE4DC);
   --color-border: #B89E8B;                /* Bege acinzentado para bordas */
-  --color-text-dark: #676;
+  --color-text-dark: #676767;
 }
 
 body.dark {

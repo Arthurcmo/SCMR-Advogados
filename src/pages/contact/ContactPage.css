@@ -51,6 +51,10 @@
     font-family: 'Urbanist', sans-serif;
   margin-top: 3rem;
 }
+
+.contact-form h2{
+    font-size: 1.2rem !important;
+}
 select {
   width: 100%;
   padding: 0.75rem;
@@ -74,6 +78,8 @@ select:focus {
 }
 
 
+
+
 h2 {
   margin-bottom: 1rem;
   color: var(--color-primary);
@@ -92,7 +98,7 @@ h2 {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea, select {
   flex: 1;
   padding: 0.75rem;
   border: 1px solid var(--color-border);
@@ -195,10 +201,12 @@ textarea{
 
   .contact-form select {
   -webkit-appearance: none;
-  appearance: none;
   border-radius: 0; /* remove arredondamento */
-  background: none;
-  padding: 0.5rem;
+  background-color: #fff;
+  appearance: none;
+  border: 1px solid var(--color-border);
+
+
 }
 
   .contact-form button {
