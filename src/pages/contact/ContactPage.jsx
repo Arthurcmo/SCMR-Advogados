@@ -1,6 +1,4 @@
-import React from 'react';
 import './ContactPage.css';
-import { FaMapMarkerAlt, FaPhoneAlt, FaLinkedin, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 const ContactPage = () => {
   return (
@@ -31,7 +29,7 @@ const ContactPage = () => {
           </div>
           <input type="hidden" name="_next" value="http://localhost:5173/obrigado" /> 
           <div className="form-group">
-            <textarea name="message" placeholder="Mensagem" rows="5"></textarea>
+            <textarea name="message" placeholder="Mensagem" rows="3"></textarea>
           </div >
             <button type="submit">Enviar</button>
         </form>
