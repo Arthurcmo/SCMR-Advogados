@@ -46,7 +46,7 @@
 .contact-form {
   flex: 2;
   min-width: 300px;
-  padding: 3rem;
+  padding: 1.5rem 3rem 2rem 2rem;
   transition: background-color 0.3s, color 0.3s;
     font-family: 'Urbanist', sans-serif;
   margin-top: 0;
@@ -171,7 +171,7 @@ textarea{
 
   .contact-form {
     box-shadow: none;
-    padding: 1.5rem 0;
+    padding: 0rem 0;
     border-radius: 0;
     margin-left: auto;
     margin-right: auto;

@@ -52,10 +52,11 @@ const BlogList = () => {
 
   return (
     <div className="blog-list">
-      <div className="blog-header">
-        Notícias em Destaque
-      </div>
+
       <div className="blog-flex-container">
+        <div className="blog-header">
+          Notícias em Destaque
+        </div>
         <div className="blog-preview">
           <h2>{post.title}</h2>
           <small>{new Date(post.date).toLocaleDateString()}</small>
@@ -84,6 +85,46 @@ const BlogList = () => {
             src={post.image || '/botanico.jpg'} alt={post.title}
           />
         </div>
+
+
+
+        {/* Mobile - imagem */}
+        <div className="blog-image-mobile">
+          <img
+            src={post.image || '/botanico.jpg'}
+            alt={post.title}
+          />
+        </div>
+        {/* Mobile - navegação */}
+        <div className="blog-navigation-mobile">
+          <button onClick={handlePrev} className="blog-nav-button" aria-label="Anterior">
+            &#8592;
+          </button>
+          <div className="blog-dots">
+            {posts.map((_, idx) => (
+              <span
+                key={idx}
+                className={`blog-dot ${idx === currentIndex ? 'active' : ''}`}
+              />
+            ))}
+          </div>
+          <button onClick={handleNext} className="blog-nav-button" aria-label="Próximo">
+            &#8594;
+          </button>
+        </div>
+        
+        {/* Mobile - preview de texto */}
+        <div className="blog-preview-mobile">
+          <h2>{post.title}</h2>
+          <small>{new Date(post.date).toLocaleDateString()}</small>
+          <p>{post.excerpt}</p>
+          <Link to={`/blog/${post.slug}`}>Saiba mais</Link>
+        </div>
+
+        
+
+
+
         <div className="digital">
           <img src="/digital.png" alt="Digital" />
         </div>

@@ -146,87 +146,99 @@
 }
 
 
-/* Responsivo: empilha verticalmente, imagem ocupa 100vw, remove .digital */
 @media (max-width: 768px) {
-
   .blog-list {
     margin: 0;
-    margin-left: 0;
     padding: 0;
   }
+
   .blog-flex-container {
     flex-direction: column;
     align-items: center;
     background-color: var(--color-primary);
+    width: 100vw;
+    padding: 0;
+    margin: 0;
   }
 
   .blog-header {
     display: block;
-    text-align: center;
     width: 100vw;
-    margin-bottom: 2rem;
+    text-align: center;
     font-size: 1.5rem;
-    color: var(--color-secondary);
-    font-weight: 700;  
-    margin-left: auto;
-    margin-right: auto;
+    font-weight: 700;
+    color: #fff;
+    margin:4rem 0 1rem 0;
   }
 
   .blog-preview {
-    width: 100vw;
-    padding: 1.5rem 0;
-    max-width: 100vw;
-    background-color: var(--color-primary);
-    color: #ccc;
+    display: none;
   }
-  .blog-preview small {
-  color: var(--color-muted);
-  font-size: 0.7rem;
-  padding: 0 0.5rem ;
-}
 
   .blog-image {
-    width: 100vw;
-    max-width: 100vw;
-    height: auto;
-    background: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
   }
 
-  
-  .blog-preview h2{
-    color: white;
-  }
-  .blog-preview p{
-    color: white;
-    padding: 0 0.5rem;
-  }
-  .blog-preview a{
-    color: white;
-    padding: 0 0.5rem;
-  }
-  .blog-image img {
-    width: 100vw;
-    height: auto;
-    display: block;
-    object-fit: cover;
-  }
-
-  .blog-dot.active{
-    border: 2px solid white;
-  }
-
-  /* Remove .digital */
   .digital {
     display: none !important;
   }
 
-  .blog-navigation {
-    flex-direction: row;
-    gap: 0.5rem;
+  .blog-preview-mobile,
+  .blog-image-mobile,
+  .blog-navigation-mobile {
+    display: block;
+    padding: 1rem 0 0 0;
+    width: 100%;
+  }
+
+  .blog-image-mobile img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+  }
+
+  .blog-navigation-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0rem;
+  }
+
+  .blog-preview-mobile h2,
+  .blog-preview-mobile p,
+  .blog-preview-mobile a {
+    color: var(--color-text);
+    padding: 0 0.5rem;
+  }
+  .blog-preview-mobile a {
+    color: var(--color-primary);
+    padding: 0 0.5rem;
+  }
+
+  .blog-preview-mobile small {
+    color: var(--color-muted);
+    font-size: 0.7rem;
+    padding: 0 0.5rem;
+  }
+
+  .blog-dot.active {
+    border: 2px solid white;
+  }
+  .blog-preview-mobile {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    padding: 2rem 0 3rem 0;
+  }
+}
+
+/* === Oculta elementos mobile em desktop === */
+@media (min-width: 769px) {
+  .blog-preview-mobile,
+  .blog-image-mobile,
+  .blog-navigation-mobile {
+    display: none;
   }
 }
