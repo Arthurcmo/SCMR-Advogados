@@ -7,36 +7,45 @@ const BlogList = () => {
   const [posts, setPosts] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const navigate = useNavigate();
+ useEffect(() => {
+  async function loadPosts() {
+    const files = import.meta.glob('../../posts/*.md', {
+      import: 'default',
+      query: '?raw',
+    });
 
-  useEffect(() => {
-    async function loadPosts() {
-      const files = import.meta.glob('../../posts/*.md', {
-        import: 'default',
-        query: '?raw'
-      });
+    const loadedPosts = [];
 
-      const loadedPosts = [];
-      for (const path in files) {
-        try {
-          const slug = path.split('/').pop().replace('.md', '');
-          const raw = await files[path]();
-          const { data, content } = matter(raw);
-          loadedPosts.push({
-            slug,
-            title: data.title || slug,
-            excerpt: data.excerpt || content.slice(0, 150) + '...',
-            date: data.date,
-            image: data.image || null,
-          });
-        } catch (err) {
-          console.error('Erro ao carregar post:', err);
-        }
+    for (const path in files) {
+      try {
+        const slug = path.split('/').pop().replace('.md', '');
+        const raw = await files[path]();
+        const { data, content } = matter(raw);
+
+        loadedPosts.push({
+          slug,
+          title: data.title || slug,
+          excerpt: data.excerpt || content.slice(0, 150) + '...',
+          date: new Date(data.date),
+          image: data.image || null,
+        });
+      } catch (err) {
+        console.error('Erro ao carregar post:', err);
       }
-      setPosts(loadedPosts);
     }
 
-    loadPosts();
-  }, []);
+    // Ordena por data decrescente e pega os 10 mais recentes
+    const sortedPosts = loadedPosts
+      .sort((a, b) => b.date - a.date)
+      .slice(0, 10);
+
+    setPosts(sortedPosts);
+  }
+
+  loadPosts();
+}, []);
+
+ 
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? posts.length - 1 : prev - 1));
@@ -97,9 +106,7 @@ const BlogList = () => {
         </div>
         {/* Mobile - navegação */}
         <div className="blog-navigation-mobile">
-          <button onClick={handlePrev} className="blog-nav-button" aria-label="Anterior">
-            &#8592;
-          </button>
+          
           <div className="blog-dots">
             {posts.map((_, idx) => (
               <span
@@ -108,9 +115,15 @@ const BlogList = () => {
               />
             ))}
           </div>
+          <div>
+
+          <button onClick={handlePrev} className="blog-nav-button" aria-label="Anterior">
+            &#8592;
+          </button>
           <button onClick={handleNext} className="blog-nav-button" aria-label="Próximo">
             &#8594;
           </button>
+          </div>
         </div>
         
         {/* Mobile - preview de texto */}
