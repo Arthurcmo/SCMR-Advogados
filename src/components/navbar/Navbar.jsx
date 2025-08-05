@@ -34,6 +34,9 @@ function Navbar() {
         <span className="dot dot-mid"></span>
         <span className="dot dot-primary"></span>
       </div>
+      <div className="navbar-mobile-toggle">
+        <button className="close-btn" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>☰</button>
+      </div>
       <div className="navbar-links">
         <div className='navbar-links-left'>
           <Link to="/sobre" className="button">Sobre</Link>
@@ -48,9 +51,7 @@ function Navbar() {
           <a href="https://instagram.com/scmradvogados" target="_blank" rel="noopener noreferrer"><FaInstagram size={20} /></a>
         </div>
       </div>
-       <div className="navbar-mobile-toggle">
-        <button className="close-btn" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>☰</button>
-      </div>
+      
 
       {isSidebarOpen && (
         <>

@@ -40,7 +40,7 @@ const Attorneys = () => {
       <div className="att-color-left" />
       <div className="att-content">
         <div className="att-list-panel">
-          <h3 className="att-heading">SÓCIOS</h3>
+          <h3 className="practice-areas-h3">SÓCIOS</h3>
           <ul className="att-list">
             {attorneys.map((attorney, index) => (
               <li
@@ -48,7 +48,7 @@ const Attorneys = () => {
                 onClick={() => setSelectedAttorney(index)}
                 style={{
                   cursor: 'pointer',
-                  color: selectedAttorney === index ? '#234' : '#fff'
+                  color: selectedAttorney === index ? 'var(--color-primary)' : '#676'
                 }}
               >
                 <p>{attorney.name}</p>

@@ -98,19 +98,22 @@ h2 {
 }
 
 .contact-form input,
-.contact-form textarea, select {
+.contact-form textarea,
+.contact-form select {
   flex: 1;
-  padding: 0.75rem;
-  border: 1px solid var(--color-border);
-  font-size: 1rem;
+  padding: 0.5rem; /* diminuiu o preenchimento */
+  font-size: 0.85rem; /* diminuiu o tamanho da fonte */
   width: 100%;
+  border: 1px solid var(--color-border);
 }
+
 
 .contact-form button {
   background-color: var(--color-bg);
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 1.5rem; /* botão mais compacto */
+  font-size: 0.85rem; /* fonte menor */
   cursor: pointer;
   margin-top: 1rem;
   font-size: 1rem;
@@ -186,18 +189,15 @@ textarea{
   .contact-form textarea,
   .contact-form select {
     width: 80%;
-    font-size: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
+    font-size: 0.85rem;
 
-  .contact-form select {
-    width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
+    margin: auto;
+}
+
+.contact-form select {
+    width:86%;
+    margin: auto;
+}
 
   .contact-form select {
   -webkit-appearance: none;
@@ -205,16 +205,13 @@ textarea{
   background-color: #fff;
   appearance: none;
   border: 1px solid var(--color-border);
-
-
 }
 
-  .contact-form button {
-    width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
+ .contact-form button {
+  font-size: 0.85rem;
+  padding: 0.6rem 0;
+}
+
 
   h2,
   .contact-form h2 {
@@ -228,9 +225,8 @@ textarea{
   }
 
   .submit{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 86%;
+    margin: auto;
     display: block;
   }
 }

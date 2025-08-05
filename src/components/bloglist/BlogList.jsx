@@ -73,9 +73,7 @@ const BlogList = () => {
           <Link to={`/blog/${post.slug}`}>Saiba mais</Link>
           <hr />
           <div className="blog-navigation">
-            <button onClick={handlePrev} className="blog-nav-button" aria-label="Anterior">
-              &#8592;
-            </button>
+            
             <div className="blog-dots">
               {posts.map((_, idx) => (
                 <span
@@ -84,9 +82,14 @@ const BlogList = () => {
                 />
               ))}
             </div>
+            <div className="blog-nav">
+            <button onClick={handlePrev} className="blog-nav-button" aria-label="Anterior">
+              &#8592;
+            </button>
             <button onClick={handleNext} className="blog-nav-button" aria-label="Próximo">
               &#8594;
             </button>
+            </div>
           </div>
         </div>
         <div className="blog-image">
@@ -131,11 +134,8 @@ const BlogList = () => {
           <h2>{post.title}</h2>
           <small>{new Date(post.date).toLocaleDateString()}</small>
           <p>{post.excerpt}</p>
-          <Link to={`/blog/${post.slug}`}>Saiba mais</Link>
+          <Link to={`/blog/${post.slug}`} className="a">Saiba mais</Link>
         </div>
-
-        
-
 
 
         <div className="digital">

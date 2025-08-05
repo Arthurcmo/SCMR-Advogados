@@ -5,6 +5,7 @@
   background-color: var(--color-bg);
   color: var(--color-secondary);
   transition: background-color 0.3s, color 0.3s;
+  min-height: 350px;
 }
 
 /* Container flex que preserva ordem: texto à esquerda, imagem à direita */
@@ -13,25 +14,39 @@
 .blog-preview {
   flex: 0 0 26.4vw;
   max-width: 26.4vw;
+  height: 350px; /* fixed height */
+  overflow: hidden; /* optional: hide overflowing content */
+  padding: 1rem 0;
+  padding-left: 0.5rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-sizing: border-box;    /* include padding in height */
+
 }
+
 
 /* Blog image: 60% of 66vw = 39.6vw */
 .blog-image {
-  flex: 0 0 39.6vw;
-  width: 39.6vw;
+  flex: 0 0 auto; /* evita que a altura seja afetada pelo flex */
+  width: 39.6vw;  /* largura variável com base na tela */
+  height: 350px;  /* altura fixa */
   padding: 0;
   margin: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .blog-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
+  width: 100%;         /* ocupa toda a largura do contêiner */
+  height: 350px;       /* altura fixa */
+  object-fit: cover;   /* melhor visual para cortar proporcionalmente */
+  object-position: left; /* mantém o foco à esquerda */
 }
+
 
 /* Digital: 17vw */
 .digital {  
@@ -61,7 +76,7 @@
 /* Conteúdo textual */
 .blog-preview {
   flex: 1;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
   padding-left: 0.5rem;
   background-color: #ffffff;
   display: flex;
@@ -69,23 +84,24 @@
   max-width: 26.4vw;
   flex-wrap: wrap;
   gap: 1rem;
+  box-sizing: border-box; /* inclui padding na largura total */
 }
 
 .blog-preview h2 {
-  margin: 0;
-  font-size: 1.5rem;
+  margin: 0 1rem;
+  font-size: 1.25rem;
   color: var(--color-secondary);
 }
 
 .blog-preview small {
   color: var(--color-muted);
   font-size: 0.7rem;
-  margin: 0.5rem 0;
+  margin: 0.5rem 1rem;
 }
 
 .blog-preview p {
   color: var(--color-text);
-  margin: 0.5rem 0 ;
+  margin: 0.5rem 1rem ;
   font-size: 0.8rem;
   word-break: break-word;
 }
@@ -94,6 +110,7 @@
   color: var(--color-primary);
   text-decoration: none;
   font-weight: bold;
+  margin: 0 1rem;
 }
 
 .blog-preview a:hover {
@@ -111,17 +128,21 @@
 .blog-navigation {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-left: 1rem;
 }
-
+.blog-nav{
+  position: absolute;
+  left: 39.6vw;
+}
 .blog-nav-button {
   background: none;
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  color: var(--color-secondary);
+  color: white;
+  background-color: var(--color-secondary);
 }
 
 .blog-nav-button:hover {
@@ -165,7 +186,7 @@
     display: block;
     width: 100vw;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #fff;
     margin:4rem 0 1rem 0;
@@ -189,6 +210,7 @@
     display: block;
     padding: 1rem 0 0 0;
     width: 100%;
+    margin: 0;
   }
   .blog-navigation-mobile {
     display: block;
@@ -242,23 +264,43 @@
   .blog-nav-button:hover {
   color: white;
   }
+  .blog-preview-mobile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+  }
 
-
-  .blog-preview-mobile h2,
+  
   .blog-preview-mobile p,
   .blog-preview-mobile a {
     color: var(--color-text);
     padding: 0 0.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align:start;
   }
-  .blog-preview-mobile a {
+  .blog-preview-mobile h2 {
+    color: var(--color-secondary);
+    font-size:1.2rem;
+    padding: 0 0.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align:start;
+  }
+  .blog-preview-mobile .a {
     color: var(--color-primary);
     padding: 0 0.5rem;
-  }
+    margin-left: 1.5rem;
+    font-size: 0.7rem;
+    }
 
   .blog-preview-mobile small {
     color: var(--color-muted);
     font-size: 0.7rem;
     padding: 0 0.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   .blog-dot.active {
@@ -269,6 +311,8 @@
     background-color: var(--color-bg);
     color: var(--color-text);
     padding: 2rem 0 3rem 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

@@ -15,7 +15,7 @@
 
 .navbar-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   padding: 2.5rem 0;
   margin: 0 17%;
   background: var(--color-bg);
@@ -24,6 +24,7 @@
   transition:  0.3s;
   top: 0;
   z-index: 1000;
+  gap: 2rem;
 }
 
 .navbar-logo {
@@ -50,6 +51,7 @@
   display: inline-block;
   background: var(--color-primary);
   transition: background 0.3s;
+  z-index: 9999;
 }
 
 .dot-pale {
@@ -92,7 +94,7 @@
 .navbar-links {
   display: flex;
   gap: 1.5rem;
-  align-items: center;
+  align-items: left;
 }
 
 .navbar-links .navbar-links-left {
@@ -135,6 +137,9 @@
 
 .navbar-socials{
   display: flex;
+  position: absolute;
+  right: 16vw;
+  top:1rem
 }
 
 
@@ -143,11 +148,8 @@
   color: var(--color-text);
   font-size: 0.5rem;
   margin-right: 0.5rem;
-  transition: color 0.3s ease-in-out;
-  position: relative;
-  top: -3rem;
-  right: 1rem;
-
+  transition: color 0.1s ease-in-out;
+  
 }
 
 .navbar-socials a:hover {
@@ -232,7 +234,6 @@ body.dark .navbar {
   color: var(--color-text);
   z-index: 9999;
   transition: color 0.3s ease-in-out;
-  position: absolute;
   margin-top: -1rem;
 }
 
@@ -241,12 +242,36 @@ body.dark .navbar {
 }
 
 @media (max-width: 768px) {
-  .navbar-mobile-toggle {
-    display: block;
-  }
+  
 
   .navbar-top{
     padding: 2.5rem 0 ;
+    display: flex;
+    justify-content:space-around;
+    gap: 0;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  .navbar-mobile-toggle {
+    display: block;
+    z-index: 9999;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .navbar-logo{
+    margin: 0;
+    padding: 0;
+    height: 80px;
+  }
+   .dot {
+    padding: 0;
+    margin: 0;
   }
 
   .navbar-links {

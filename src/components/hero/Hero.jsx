@@ -35,7 +35,7 @@ const Hero = () => {
             <div className="hero-row">
                 <div className="hero-side secondary" />
                 <div className="hero-info-wrapper">
-                    <div className="subtitle">Notícias em Destaque</div>
+                    <div className="subtitle">NOTÍCIAS EM DESTAQUE</div>
                     <div className="sobre" style={{padding:0}}>
                         <h2>Apresentação</h2>
                         <p>

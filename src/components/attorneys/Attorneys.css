@@ -34,7 +34,7 @@
 .att-color-left {
   width: 17%;
   min-height: 400px;
-  background: var(--color-primary);
+  background: var(--color-secondary);
 }
 
 .att-content {
@@ -45,7 +45,7 @@
 
 .att-list-panel {
   width: 40%;
-  background: var(--color-primary);
+  background: var(--color-secondary);
   padding: 2rem;
   box-sizing: border-box;
 }
@@ -93,7 +93,7 @@
 }
 
 .att-list li:hover {
-  color: var(--color-secondary);
+  color: var(--color-primary-dark);
   cursor: pointer;
 }
 
@@ -153,6 +153,7 @@
     width: 100%;
     padding: 2rem;
   }
+
 
   .att-close-btn {
     left: 1rem;

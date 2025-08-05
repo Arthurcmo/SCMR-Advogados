@@ -31,7 +31,7 @@ const ContactPage = () => {
           <div className="form-group">
             <textarea name="message" placeholder="Mensagem" rows="3"></textarea>
           </div >
-            <button type="submit">Enviar</button>
+          <button className="submit"type="submit">Enviar</button>
         </form>
       </div>
     </div>
