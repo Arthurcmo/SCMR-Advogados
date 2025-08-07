@@ -140,8 +140,15 @@ const BlogList = () => {
         </div>
         
 
-        <div className="digital">
-        </div>
+
+            <div className="digital" style={{
+                    position: 'absolute',
+                    top: '780px',
+                    left: '83vw',
+                    zIndex: 1000
+                }}>
+                    <img src="/digital.png" alt="Digital" style={{ width: 'auto', height: '350px', overflow: 'hidden' }} />
+                </div>
       </div>
     </div>
   );

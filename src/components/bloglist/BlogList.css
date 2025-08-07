@@ -49,18 +49,7 @@
 
 
 /* Digital: 17vw */
-.digital {  
-  width: 17vw;
-  max-width: 17vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.digital img {
-  position: relative;
-  overflow: hidden;
-}
 .blog-flex-container {
   display: flex;
   flex-direction: row;
