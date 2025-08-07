@@ -41,7 +41,10 @@ body {
   margin: 0;
   font-family: 'Urbanist', sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden; /* Esconde qualquer coisa que transborde horizontalmente */
 }
+
+
 
 .visually-hidden {
   position: absolute !important;

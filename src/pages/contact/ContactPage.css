@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem 3rem;
+    padding: 0rem 3rem;
     font-family: 'montserrat', sans-serif;
     background-color: var(--color-bg);
     max-width: 1200px;
@@ -46,7 +46,7 @@
 .contact-form {
   flex: 2;
   min-width: 300px;
-  padding: 1.5rem 3rem 2rem 2rem;
+  padding: 0rem 3rem 2rem 2rem;
   transition: background-color 0.3s, color 0.3s;
     font-family: 'Urbanist', sans-serif;
   margin-top: 0;

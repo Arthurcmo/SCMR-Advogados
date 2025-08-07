@@ -8,22 +8,21 @@ import BlogList from '../../components/bloglist/BlogList';
 import Helmet from 'react-helmet';
 import ContactPage from '../../pages/contact/ContactPage';
 
-const Home = () => 
-    {
+const Home = () => {
     return (
-         <>
+        <>
             <Helmet>
                 <title>Advocacia Sovierzoski Carleial Magnabosco | Direito Civil, Trabalhista e Empresarial</title>
-                <meta 
-                    name="description" 
-                    content="Escritório de advocacia especializado em direito civil, trabalhista e empresarial. Atendimento personalizado em Curitiba e região." 
+                <meta
+                    name="description"
+                    content="Escritório de advocacia especializado em direito civil, trabalhista e empresarial. Atendimento personalizado em Curitiba e região."
                 />
-                <meta 
-                    name="keywords" 
+                <meta
+                    name="keywords"
                     content="advocacia, direito civil, trabalhista, empresarial, Curitiba, advogados, Sovierzoski, Carleial, Magnabosco"
                 />
                 <link rel="canonical" href="https://site-advocacia-rust.vercel.app" />
-                
+
                 <script type="application/ld+json">{`
                 {
                     "@context": "https://schema.org",
@@ -51,7 +50,15 @@ const Home = () =>
             </Helmet>
             <div >
                 <Hero />
-                <BlogList/>
+                <BlogList />
+                <div style={{
+                    position: 'absolute',
+                    top: '780px',
+                    left: '83vw',
+                    zIndex: 1000
+                }}>
+                    <img src="/digital.png" alt="Digital" style={{ width: 'auto', height: '350px', overflow: 'hidden' }} />
+                </div>
             </div>
         </>
     );

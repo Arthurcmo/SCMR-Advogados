@@ -64,7 +64,7 @@ const BlogList = () => {
 
       <div className="blog-flex-container">
         <div className="blog-header">
-          Notícias em Destaque
+          NOTÍCIAS EM DESTAQUE
         </div>
         <div className="blog-preview">
           <h2>{post.title}</h2>
@@ -100,6 +100,16 @@ const BlogList = () => {
 
 
 
+        
+        {/* Mobile - preview de texto */}
+       
+ <div className="blog-preview-mobile">
+          <h2>{post.title}</h2>
+          <small>{new Date(post.date).toLocaleDateString()}</small>
+          <p>{post.excerpt}</p>
+          <Link to={`/blog/${post.slug}`} className="a">Saiba mais</Link>
+        </div>
+
         {/* Mobile - imagem */}
         <div className="blog-image-mobile">
           <img
@@ -129,17 +139,8 @@ const BlogList = () => {
           </div>
         </div>
         
-        {/* Mobile - preview de texto */}
-        <div className="blog-preview-mobile">
-          <h2>{post.title}</h2>
-          <small>{new Date(post.date).toLocaleDateString()}</small>
-          <p>{post.excerpt}</p>
-          <Link to={`/blog/${post.slug}`} className="a">Saiba mais</Link>
-        </div>
-
 
         <div className="digital">
-          <img src="/digital.png" alt="Digital" />
         </div>
       </div>
     </div>

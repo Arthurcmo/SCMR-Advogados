@@ -189,7 +189,7 @@
     font-size: 1rem;
     font-weight: 700;
     color: #fff;
-    margin:4rem 0 1rem 0;
+    margin:1rem 0 1rem 0;
   }
 
   .blog-preview {
@@ -218,6 +218,10 @@
     width: 100%;
     margin: 0;
   }
+  .blog-image-mobile {
+    padding: 0;
+
+  }
 
 
 
@@ -228,7 +232,7 @@
     padding: 0;
     margin: 0;
     position: relative;
-    top:4px
+
   }
 
   .blog-navigation-mobile{

@@ -39,11 +39,11 @@ function Navbar() {
       </div>
       <div className="navbar-links">
         <div className='navbar-links-left'>
-          <Link to="/sobre" className="button">Sobre</Link>
-          <Link to="/servicos" className="button">Atuação</Link>
-          <Link to="/equipe" className="button">Equipe</Link>
-          <Link to="/publicacoes" className="button">Publicações</Link>
-          <Link to="/contato" className="button">Contato</Link>
+          <Link to="/sobre" className="button">SOBRE</Link>
+          <Link to="/servicos" className="button">ATUAÇÃO</Link>
+          <Link to="/equipe" className="button">EQUIPE</Link>
+          <Link to="/publicacoes" className="button">PUBLICAÇÕES</Link>
+          <Link to="/contato" className="button">CONTATO</Link>
         </div>
         <div className="navbar-socials">
           <a href="https://wa.me/5541988077655" target="_blank" rel="noopener noreferrer"><FaWhatsapp size={20} /></a>
@@ -57,12 +57,12 @@ function Navbar() {
         <>
           <div className="navbar-overlay" onClick={() => setIsSidebarOpen(false)}></div>
           <div className={`navbar-sidebar ${isSidebarOpen ? "active" : ""}`} onClick={() => setIsSidebarOpen(false)}>
-            <Link to="/">Início</Link>
-            <Link to="/sobre">Sobre</Link>
-            <Link to="/servicos">Atuação</Link>
-            <Link to="/equipe">Equipe</Link>
-            <Link to="/publicacoes">Publicações</Link>
-            <Link to="/contato">Contato</Link>
+            <Link to="/">INÍCIO</Link>
+            <Link to="/sobre">SOBRE</Link>
+            <Link to="/servicos">ATUAÇÃO</Link>
+            <Link to="/equipe">EQUIPE</Link>
+            <Link to="/publicacoes">PUBLICAÇÕES</Link>
+            <Link to="/contato">CONTATO</Link>
           </div>
         </>
       )}

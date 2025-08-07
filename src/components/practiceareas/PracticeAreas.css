@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   width: 100%;
   margin: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 
 /* Top Row */
@@ -31,22 +31,24 @@
 
 /* Bottom Row */
 .left-color {
-  width: 17%;
-  min-height: 400px;
+  width:0%;
+  height:fit-content;
   background: var(--color-secondary);
 }
 
 .content-wrapper {
-  width: 66%;
-  min-height: 400px;
+  width: 83%;
+  margin-left:0;
   display: flex;
+  
 }
 
 .left-panel {
   width: 40%;
   background: var(--color-secondary);
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 17vw;
   box-sizing: border-box;
+  height: fit-content;
 }
 
 .right-panel {
@@ -104,6 +106,10 @@
 @media (max-width: 768px) {
   .practice-wrapper {
     flex-direction: column;
+  }
+
+  .practice-areas-h3{
+    padding: 0 2rem;
   }
 
   .side-blank,
