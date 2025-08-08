@@ -9,10 +9,10 @@ const attorneys = [
     bio: "Expert in litigation and real estate transactions, with over 15 years of experience representing clients in complex civil cases.",
   },
   {
-    name: "Dr. Paulo Roberto",
+    name: "Paulo Magnabosco",
     title: "OAB/PR 119.157",
     image: "/pauloR.jpg",
-    bio: "Advogado atuante no âmbito do Direito do Trabalho. Graduado pela Pontifícia Universidade Católica do Paraná e pós-graduado em Direito e Processo do Trabalho pela Pontifícia Universidade Católica do Rio Grande do Sul.",
+    bio: "Sócio Fundador, coordenador e advogado atuante no âmbito trabalhista. Graduado pela Pontifícia Universidade Católica do Paraná e pós-graduado em Direito e Processo do Trabalho pela Pontifícia Universidade Católica do Rio Grande do Sul. Membro da Comissão de Direito do Trabalho da OAB/PR.",
   },
   {
     name: "Dr. Magnabosco",

@@ -131,7 +131,11 @@
     flex-direction: column;
   }
 
-  .left-panel,
+  
+  .left-panel{
+    width: 100%;
+    padding: 2rem 0;
+  }
   .right-panel {
     width: 100%;
     padding: 2rem;

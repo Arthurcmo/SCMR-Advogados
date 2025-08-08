@@ -146,9 +146,16 @@
   .att-content {
     width: 100%;
     flex-direction: column;
+    padding-left: 0;
+    margin-left: 0;
   }
+  
 
-  .att-list-panel,
+  .att-list-panel{
+    width: 100%;
+    padding-left: 0;
+  }
+  
   .att-detail-panel {
     width: 100%;
     padding: 2rem;

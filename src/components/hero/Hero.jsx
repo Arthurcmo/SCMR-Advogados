@@ -39,7 +39,7 @@ const Hero = () => {
                     <div className="sobre" style={{padding:0}}>
                         <h2>Apresentação</h2>
                         <p>
-                            Lorem ipsum dolorleniti necessitatibus eligendi quos rerum alias officiis optio facilis. Officiis eaque porro fuga illum odio enim impedit.
+                            Sovierzoski, Carleial & Magnabosco reúne advogados com trajetória sólida e atuação destacada em diversas áreas do Direito. Nosso trabalho é pautado pela cooperação entre especialistas, permitindo análises precisas e soluções jurídicas sob medida para cada cliente. Com presença em diferentes segmentos e abrangência que ultrapassa fronteiras, prestamos assessoria estratégica para demandas complexas e de alta relevância.
                         </p>
                         <Link to="/sobre" className="button">Saiba mais</Link>
 

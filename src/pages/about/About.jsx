@@ -55,7 +55,14 @@ const About = () => {
     </div>
     <div className="right-panel">
       <p>
-        O escritório Sovierzoski | Carleial | Magnabosco Advogados é formado por uma equipe de advogados com sólida formação acadêmica e experiência prática, atuando em diversas áreas do Direito. Nossa missão é oferecer soluções jurídicas personalizadas, com foco na ética, transparência e excelência no atendimento.
+       Nascemos de uma amizade movida por propósito e visão de futuro. Um escritório concebido para oferecer às empresas soluções jurídicas personalizadas.
+
+Entregamos mais do que respostas — estruturamos estratégias alinhadas aos objetivos de quem busca segurança, eficiência e evolução.
+
+No Soviersoski, Carleial & Magnabosco Advogados, unimos atuação técnica rigorosa e compreensão profunda das necessidades empresariais, conduzindo cada demanda com precisão e comprometimento absoluto. Nosso time, formado por profissionais de sólida trajetória, atua de maneira coordenada para atender com excelência casos de alta complexidade, sempre orientados por princípios éticos e visão estratégica.
+
+Com uma abordagem que valoriza a clareza, a agilidade e a consistência jurídica, prestamos assessoria consultiva e contenciosa em diversas áreas do Direito Empresarial, oferecendo soluções que preservam interesses, mitigam riscos e potencializam oportunidades.
+
       </p>
     </div>
   </div>

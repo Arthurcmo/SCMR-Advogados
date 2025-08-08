@@ -109,15 +109,7 @@ const BlogList = () => {
           <p>{post.excerpt}</p>
           <Link to={`/blog/${post.slug}`} className="a">Saiba mais</Link>
         </div>
-
-        {/* Mobile - imagem */}
-        <div className="blog-image-mobile">
-          <img
-            src={post.image || '/botanico.jpg'}
-            alt={post.title}
-          />
-        </div>
-        {/* Mobile - navegação */}
+                {/* Mobile - navegação */}
         <div className="blog-navigation-mobile">
           
           <div className="blog-dots">
@@ -137,6 +129,14 @@ const BlogList = () => {
             &#8594;
           </button>
           </div>
+        </div>
+        
+        {/* Mobile - imagem */}
+        <div className="blog-image-mobile">
+          <img
+            src={post.image || '/botanico.jpg'}
+            alt={post.title}
+          />
         </div>
         
 
