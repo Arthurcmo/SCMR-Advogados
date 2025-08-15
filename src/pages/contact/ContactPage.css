@@ -3,13 +3,14 @@
     flex-wrap: wrap;
     flex-direction: column;
     gap: 2rem;
-    padding: 0rem 3rem;
+    padding: 0rem 0rem;
     font-family: 'montserrat', sans-serif;
     background-color: var(--color-bg);
-    max-width: 1200px;
+    width: 66vw;
     margin:  auto;
     color: var(--color-text);
     transition: background-color 0.3s, color 0.3s;
+    margin: 0 17vw;
 }
     
 
@@ -23,7 +24,7 @@
 }
 
 .contact-info p {
-  margin: 0.5rem 0;
+  margin: 0.0rem 0;
   font-size: 1rem;
   color: var(--color-muted);
 }
@@ -46,7 +47,7 @@
 .contact-form {
   flex: 2;
   min-width: 300px;
-  padding: 0rem 3rem 2rem 2rem;
+  padding: 0rem 0rem 2rem 0rem;
   transition: background-color 0.3s, color 0.3s;
     font-family: 'Urbanist', sans-serif;
   margin-top: 0;
