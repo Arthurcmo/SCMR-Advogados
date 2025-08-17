@@ -25,7 +25,7 @@
 
 .contact-info p {
   margin: 0.0rem 0;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--color-muted);
 }
 
@@ -54,13 +54,13 @@
 }
 
 .contact-form h2{
-    font-size: 1.2rem !important;
+    font-size: 1.5rem !important;
 }
 select {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #ccc;
-  font-size: 1rem;
+  font-size: 0.8rem;
   background-color: #fff;
   color: #333;
   font-family: inherit;
@@ -114,10 +114,9 @@ h2 {
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
   padding: 0.6rem 1.5rem; /* botão mais compacto */
-  font-size: 0.85rem; /* fonte menor */
+  font-size: 0.80rem; /* fonte menor */
   cursor: pointer;
   margin-top: 1rem;
-  font-size: 1rem;
 }
 
 .contact-form button:hover {
@@ -190,7 +189,7 @@ textarea{
   .contact-form textarea,
   .contact-form select {
     width: 80%;
-    font-size: 0.85rem;
+    font-size: 0.80rem;
 
     margin: auto;
 }
@@ -209,7 +208,7 @@ textarea{
 }
 
  .contact-form button {
-  font-size: 0.85rem;
+  font-size: 0.80rem;
   padding: 0.6rem 0;
 }
 
@@ -221,7 +220,7 @@ textarea{
   }
 
   .socials a {
-    font-size: 1rem;
+    font-size: 0rem;
     justify-content: center;
   }
 

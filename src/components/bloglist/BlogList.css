@@ -78,13 +78,13 @@
 
 .blog-preview h2 {
   margin: 0 1rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--color-secondary);
 }
 
 .blog-preview small {
   color: var(--color-muted);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   margin: 0.5rem 1rem;
 }
 
