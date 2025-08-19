@@ -61,6 +61,7 @@
 .publication-preview p{
   color: var(--color-text);
   font-size: 0.8rem;
+  text-align: justify;
 }
 
 .custom-divider {

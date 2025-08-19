@@ -41,8 +41,13 @@ body {
   margin: 0;
   font-family: 'Urbanist', sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
-  overflow-x: hidden; /* Esconde qualquer coisa que transborde horizontalmente */
+  overflow-x: hidden; /* Esconde qualquer coisa que transborde horizontalmente */;
 }
+
+p {
+  text-align: justify;
+}
+
 
 h2{
   font-size: 1.5rem;

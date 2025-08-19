@@ -16,6 +16,7 @@
 .right-panel p{
   color: var(--color-text);
   font-size: 0.8rem;
+   text-align: justify;
 }
 
 .image-section {

@@ -39,6 +39,7 @@ function Navbar() {
       </div>
       <div className="navbar-links">
         <div className='navbar-links-left'>
+          <Link to="/" className="button">INÍCIO</Link>
           <Link to="/sobre" className="button">SOBRE</Link>
           <Link to="/servicos" className="button">ATUAÇÃO</Link>
           <Link to="/equipe" className="button">EQUIPE</Link>
