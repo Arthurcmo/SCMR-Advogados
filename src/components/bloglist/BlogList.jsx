@@ -94,7 +94,7 @@ const BlogList = () => {
         </div>
         <div className="blog-image">
           <img
-            src= '/PaginaInicial.jpg' alt={post.title}
+            src= '/PaginaInicial.webp' alt={post.title}
           />
         </div>
 
@@ -134,7 +134,7 @@ const BlogList = () => {
         {/* Mobile - imagem */}
         <div className="blog-image-mobile">
           <img
-            src= '/PaginaInicial.jpg' alt={post.title}
+            src= '/PaginaInicial.webp' alt={post.title}
           />
         </div>
         

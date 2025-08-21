@@ -15,20 +15,20 @@ import HelmetContact from "./pages/contact/HelmetContact";
 import './App.css'; // Importando o CSS global
 
 const imagesToPreload = [
-  "about1.jpg",
-  "AbottPhoto.jpg",
-  "attorneysAlt.jpg",
-  "buildings1.jpg",
-  "builginds2.jpg",
-  "digital.png",
-  "heronew1.jpg",
-  "PaginaInicial.jpg",
-  "Publicacao.jpg"
+  "about1.webp",
+  "AbottPhoto.webp",
+  "attorneysAlt.webp",
+  "buildings1.webp",
+  "builginds2.webp",
+  "digital.webp",
+  "heronew1.webp",
+  "PaginaInicial.webp",
+  "Publicacao.webp"
 ];
 
 imagesToPreload.forEach((src) => {
   const img = new Image();
-  img.src = src; // navegador baixa e guarda no cache
+  img.src = src; 
 });
 
 function App() {

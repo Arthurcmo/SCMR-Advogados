@@ -3,7 +3,7 @@ import './Hero.css';
 import { Link } from 'react-router-dom';
 const Hero = () => {
     const images = [
-        "/heronew1.jpg",
+        "/heronew1.webp",
         "/heronew2.jpg",
         "/heronew3.jpg",
     ];

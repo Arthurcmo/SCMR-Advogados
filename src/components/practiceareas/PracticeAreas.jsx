@@ -25,7 +25,7 @@ const PracticeAreas = () => {
       {/* First row */}
       <div className="side-blank" />
       <div className="image-section">
-        <img src="/buildings2.jpg" alt="Law Firm" className="hero-image" />
+        <img src="/buildings2.webp" alt="Law Firm" className="hero-image" />
       </div>
       <div className="side-right" />
 

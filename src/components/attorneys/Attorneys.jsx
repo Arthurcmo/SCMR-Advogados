@@ -30,7 +30,7 @@ const Attorneys = () => {
       <div className="att-blank" />
       <div className="att-image-section">
         <img
-          src={"/attorneysAlt.jpg"}
+          src={"/attorneysAlt.webp"}
           alt="Equipe"
           className="att-hero-image"
         />
