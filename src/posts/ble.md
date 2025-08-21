@@ -1,7 +1,7 @@
 ---
 title: "Entenda Seus Direitos Trabalhistas"
 date: "2024-11-15"
-author: "Dr. Leonardo Sovierzoski"
+author: "Leonardo Sovierzoski"
 excerpt: "Guia rápido para entender seus direitos garantidos pela CLT."
 ---
 

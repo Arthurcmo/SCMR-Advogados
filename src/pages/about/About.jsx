@@ -42,7 +42,7 @@ const About = () => {
   {/* First row */}
   <div className="side-blank" />
   <div className="image-section">
-    <img src="/buildings1.jpg" alt="Law Firm" className="hero-image" />
+    <img src="/AboutPhoto.jpg" alt="Law Firm" className="hero-image" />
   </div>
   <div className="side-right" />
 

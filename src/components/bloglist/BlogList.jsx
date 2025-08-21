@@ -94,7 +94,7 @@ const BlogList = () => {
         </div>
         <div className="blog-image">
           <img
-            src={post.image || '/botanico.jpg'} alt={post.title}
+            src= '/PaginaInicial.jpg' alt={post.title}
           />
         </div>
 
@@ -134,8 +134,7 @@ const BlogList = () => {
         {/* Mobile - imagem */}
         <div className="blog-image-mobile">
           <img
-            src={post.image || '/botanico.jpg'}
-            alt={post.title}
+            src= '/PaginaInicial.jpg' alt={post.title}
           />
         </div>
         
@@ -143,11 +142,11 @@ const BlogList = () => {
 
             <div className="digital" style={{
                     position: 'absolute',
-                    top: '930px',
-                    right: '0',
+                    top: '850px',
+                    right: '-100px',
                     zIndex: 1000
                 }}>
-                    <img src="/digital.png" alt="Digital" style={{ width: 'auto', height: '250px', overflow: 'hidden' }} />
+                    <img src="/digital.png" alt="Digital" style={{ width: 'auto', height: '350px', overflow: 'hidden' }} />
                 </div>
       </div>
     </div>

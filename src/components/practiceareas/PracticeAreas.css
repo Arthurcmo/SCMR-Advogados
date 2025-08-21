@@ -95,6 +95,11 @@
   letter-spacing: 0.15rem;
 }
 
+.practice-areas-list h3{
+  font-size: 0.8rem;
+
+}
+
 .practice-areas-list li {
   margin: 1rem 0;
 }

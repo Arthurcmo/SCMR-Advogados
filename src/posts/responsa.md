@@ -1,7 +1,7 @@
 ---
 title: "Responsabilidade Civil em Acidentes de Trânsito"
 date: "2024-10-05"
-author: "Dr. Carleial"
+author: "Ricardo Carleial"
 excerpt: "Saiba quais são os direitos e deveres dos envolvidos em um acidente de trânsito."
 ---
 

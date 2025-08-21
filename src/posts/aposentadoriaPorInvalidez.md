@@ -1,7 +1,7 @@
 ---
 title: "Como Funciona a Aposentadoria por Invalidez"
 date: "2025-03-02"
-author: "Dr. Carleial"
+author: "Ricardo Carleial"
 excerpt: "Veja quais são os requisitos e etapas para solicitar a aposentadoria por invalidez no INSS."
 ---
 

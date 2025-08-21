@@ -54,7 +54,7 @@ const PublicationsList = () => {
       <div className="side-blank" />
       <div className="image-section">
         <img
-          src="/botanico.jpg"
+          src="/Publicacao.jpg"
           alt="Publicações"
           className="hero-image"
         />

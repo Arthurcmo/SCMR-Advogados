@@ -3,22 +3,22 @@ import './Attorneys.css';
 
 const attorneys = [
   {
-    name: "Dr. Sovierzoski",
+    name: "Leonardo Sovierzoski ",
     title: "Founding Partner – Civil & Real Estate Law",
-    image: "/leco.jpeg",
+    image: "/FotoLeonardo.jpg",
     bio: "Expert in litigation and real estate transactions, with over 15 years of experience representing clients in complex civil cases.",
   },
   {
     name: "Paulo Magnabosco",
     title: "OAB/PR 119.157",
-    image: "/pauloR.jpg",
+    image: "/FotoPaulo.jpg",
     bio: "Sócio Fundador, coordenador e advogado atuante no âmbito trabalhista. Graduado pela Pontifícia Universidade Católica do Paraná e pós-graduado em Direito e Processo do Trabalho pela Pontifícia Universidade Católica do Rio Grande do Sul. Membro da Comissão de Direito do Trabalho da OAB/PR.",
   },
   {
-    name: "Dr. Magnabosco",
-    title: "Partner – Labor & Family Law",
-    image: "/leco.jpeg",
-    bio: "Advocates for clients with compassion in family matters and expert representation in labor disputes.",
+    name: "Ricardo Carleial",
+    title: "OAB/PR 131.251",
+    image: "/FotoRicardo.jpg",
+    bio: "Sócio responsável pela área Tributária. Graduado em Direito pela Pontifícia Universidade Católica de Minas Gerais e pós-graduado em Direito Tributário pela Pontifícia Universidade Católica do Rio Grande do Sul. Atua na consultoria e no contencioso tributário, com ênfase na defesa de interesses empresariais em demandas estratégicas e estruturadas.",
   },
 ];
 

@@ -1,7 +1,7 @@
 ---
 title: "Herança e Inventário: O Que Você Precisa Saber"
 date: "2025-01-20"
-author: "Dr. Magnabosco"
+author: "Paulo Magnabosco"
 excerpt: "Entenda como funciona o processo de inventário e a partilha de bens entre herdeiros."
 ---
 

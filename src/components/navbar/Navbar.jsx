@@ -57,7 +57,8 @@ function Navbar() {
       {isSidebarOpen && (
         <>
           <div className="navbar-overlay" onClick={() => setIsSidebarOpen(false)}></div>
-          <div className={`navbar-sidebar ${isSidebarOpen ? "active" : ""}`} onClick={() => setIsSidebarOpen(false)}>
+          <div className={`navbar-sidebar ${isSidebarOpen ? "active" : ""}`} onClick={() => {setIsSidebarOpen(false); 
+                                                                                            window.scrollTo(0, 0);}}>
             <Link to="/">INÍCIO</Link>
             <Link to="/sobre">SOBRE</Link>
             <Link to="/servicos">ATUAÇÃO</Link>
