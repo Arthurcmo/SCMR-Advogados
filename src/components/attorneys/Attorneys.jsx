@@ -12,7 +12,7 @@ const attorneys = [
     name: "Paulo Magnabosco",
     title: "OAB/PR 119.157",
     image: "/FotoPaulo.jpg",
-    bio: "Sócio Fundador, coordenador e advogado atuante no âmbito trabalhista. Graduado pela Pontifícia Universidade Católica do Paraná e pós-graduado em Direito e Processo do Trabalho pela Pontifícia Universidade Católica do Rio Grande do Sul. Membro da Comissão de Direito do Trabalho da OAB/PR.",
+    bio: "Sócio responsável pela área trabalhista. Graduado pela Pontifícia Universidade Católica do Paraná e pós-graduado em Direito e Processo do Trabalho pela Pontifícia Universidade Católica do Rio Grande do Sul. Membro da Comissão de Direito do Trabalho da OAB/PR. Atua na consultoria e no contencioso trabalhista, representando empresas e trabalhadores, com foco predominante na assessoria preventiva e na defesa estratégica dos interesses patronais.",
   },
   {
     name: "Ricardo Carleial",
