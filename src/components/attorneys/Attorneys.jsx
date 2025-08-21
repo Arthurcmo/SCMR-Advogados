@@ -4,9 +4,9 @@ import './Attorneys.css';
 const attorneys = [
   {
     name: "Leonardo Sovierzoski ",
-    title: "Founding Partner – Civil & Real Estate Law",
+    title: "OAB/PR 121.618",
     image: "/FotoLeonardo.jpg",
-    bio: "Expert in litigation and real estate transactions, with over 15 years of experience representing clients in complex civil cases.",
+    bio: "Sócio responsável pela área Empresarial. Graduado em Direito pela Pontifícia Universidade Católica do Paraná e pós-graduado em Direito Tributário pela Pontifícia Universidade Católica do Rio Grande do Sul. Atua na consultoria e assessoria jurídica empresarial, com destaque para a atuação em operações societárias, reestruturações empresariais e negociações contratuais complexas.",
   },
   {
     name: "Paulo Magnabosco",
