@@ -31,12 +31,11 @@
   align-items: center;
   justify-content: center;
 }
-
 .abt-hero-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: 10% 20%;
 }
 
 /* Espaço à direita */

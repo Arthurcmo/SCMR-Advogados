@@ -203,6 +203,7 @@
     width: 100%;
     margin: 0;
   }
+  
   .blog-navigation-mobile {
     display: block;
     padding: 0;
@@ -211,7 +212,7 @@
   }
   .blog-image-mobile {
     padding: 0;
-
+    background-color: var(--color-bg);
   }
 
 
@@ -274,7 +275,7 @@
     padding: 0 0.5rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    text-align:start;
+    text-align:justify;
   }
   .blog-preview-mobile h2 {
     color: var(--color-secondary);
@@ -289,6 +290,7 @@
     padding: 0 0.5rem;
     margin-left: 1.5rem;
     font-size: 0.7rem;
+    text-align: start;
     }
 
   .blog-preview-mobile small {
