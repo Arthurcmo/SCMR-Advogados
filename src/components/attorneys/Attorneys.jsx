@@ -64,11 +64,11 @@ const Attorneys = () => {
             </button>
           )}
           <h2>{selectedAttorney !== null ? attorneys[selectedAttorney].name : 'Equipe de Advogados'}</h2>
-          <h4>{selectedAttorney !== null ? attorneys[selectedAttorney].title : 'Profissionais especializados em diferentes áreas do direito, trabalhando com excelência e ética para representar nossos clientes.'}</h4>
+          <h4>{selectedAttorney !== null ? attorneys[selectedAttorney].title : 'Nossa equipe é formada por profissionais altamente qualificados e especializados em diferentes áreas do Direito, que atuam com excelência técnica, rigor ético e visão estratégica.'}</h4>
           <p>
             {selectedAttorney !== null
               ? attorneys[selectedAttorney].bio
-              : 'Nosso time é composto por profissionais experientes em diversas áreas jurídicas. Trabalhamos de forma colaborativa para garantir as melhores soluções jurídicas para nossos clientes.'}
+              : 'Unimos experiência e inovação em uma atuação colaborativa, voltada a oferecer soluções jurídicas personalizadas e de alto nível, sempre orientadas à proteção e ao fortalecimento dos interesses de nossos clientes.'}
           </p>
         </div>
       </div>

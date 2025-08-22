@@ -142,7 +142,7 @@ const BlogList = () => {
 
             <div className="digital" style={{
                     position: 'absolute',
-                    top: '850px',
+                    top: '730px',
                     right: '-100px',
                     zIndex: 1000
                 }}>
