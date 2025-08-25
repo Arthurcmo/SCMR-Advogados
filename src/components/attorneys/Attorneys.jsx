@@ -5,19 +5,19 @@ const attorneys = [
   {
     name: "Leonardo Sovierzoski ",
     title: "OAB/PR 121.618",
-    image: "/FotoLeonardo.jpg",
+    image: "/FotoLeonardo.webp",
     bio: "Sócio responsável pela área Empresarial. Graduado em Direito pela Pontifícia Universidade Católica do Paraná e pós-graduado em Direito Tributário pela Pontifícia Universidade Católica do Rio Grande do Sul. Atua na consultoria e assessoria jurídica empresarial, com destaque para a atuação em operações societárias, reestruturações empresariais e negociações contratuais complexas.",
   },
   {
     name: "Paulo Magnabosco",
     title: "OAB/PR 119.157",
-    image: "/FotoPaulo.jpg",
+    image: "/FotoPaulo.webp",
     bio: "Sócio responsável pela área trabalhista. Graduado pela Pontifícia Universidade Católica do Paraná e pós-graduado em Direito e Processo do Trabalho pela Pontifícia Universidade Católica do Rio Grande do Sul. Membro da Comissão de Direito do Trabalho da OAB/PR. Atua na consultoria e no contencioso trabalhista, representando empresas e trabalhadores, com foco predominante na assessoria preventiva e na defesa estratégica dos interesses patronais.",
   },
   {
     name: "Ricardo Carleial",
     title: "OAB/PR 131.251",
-    image: "/FotoRicardo.jpg",
+    image: "/FotoRicardo.webp",
     bio: "Sócio responsável pela área Tributária. Graduado em Direito pela Pontifícia Universidade Católica de Minas Gerais e pós-graduado em Direito Tributário pela Pontifícia Universidade Católica do Rio Grande do Sul. Atua na consultoria e no contencioso tributário, com ênfase na defesa de interesses empresariais em demandas estratégicas e estruturadas.",
   },
 ];
