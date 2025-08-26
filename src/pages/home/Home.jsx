@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>Advocacia Sovierzoski Carleial Magnabosco | Direito Civil, Trabalhista e Empresarial</title>
+                <title>Sovierzoski, Carleial & Magnabosco Advogados</title>
                 <meta
                     name="description"
                     content="Escritório de advocacia especializado em direito civil, trabalhista e empresarial. Atendimento personalizado em Curitiba e região."

@@ -44,7 +44,7 @@ const BlogPost = () => {
     "articleBody": post.content,
     "publisher": {
       "@type": "Organization",
-      "name": "Sovierzoski | Carleial | Magnabosco Advogados"
+      "name": "Sovierzoski, Carleial & Magnabosco Advogados"
     }
   };
 
@@ -54,7 +54,7 @@ const BlogPost = () => {
       <div className="side-blank" />
       <div className="image-section">
         <img
-          src="/botanico.jpg"
+          src="/Publicacao.webp"
           alt="Artigo"
           className="hero-image"
         />
