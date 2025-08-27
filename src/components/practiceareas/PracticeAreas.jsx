@@ -19,7 +19,17 @@ const practiceAreas = [
 
 const PracticeAreas = () => {
   const [selectedArea, setSelectedArea] = useState(null);
+  const isMobile = window.innerWidth <= 768;
 
+  React.useEffect(() => {
+    if (isMobile && selectedArea !== null) {
+      const rightPanel = document.querySelector('.right-panel');
+      if (rightPanel) {
+        rightPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }, [selectedArea, isMobile]);
+  
   return (
     <div className="practice-wrapper">
       {/* First row */}
