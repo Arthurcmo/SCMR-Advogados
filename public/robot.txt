@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://scmradvogados.com.br/sitemap.xml

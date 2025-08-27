@@ -39,6 +39,7 @@ const About = () => {
       </Helmet>
 
       <div className="practice-wrapper">
+        <h1 className="visually-hidden">Sobre o escritório</h1>
         {/* First row */}
         <div className="side-blank" />
         <div className="image-section">

@@ -32,6 +32,7 @@ const PracticeAreas = () => {
   
   return (
     <div className="practice-wrapper">
+      <h1 className="visually-hidden">Áreas de atuação</h1>
       {/* First row */}
       <div className="side-blank" />
       <div className="image-section">
