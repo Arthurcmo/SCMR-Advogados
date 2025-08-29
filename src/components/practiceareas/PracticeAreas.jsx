@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './PracticeAreas.css';
-
+import { Helmet } from "react-helmet";
 const practiceAreas = [
   { title: "Administrativo e Regulatório", description: "Atuamos na interface entre o setor privado e o Poder Público, assessorando empresas em licitações, contratos administrativos, concessões, permissões e parcerias público-privadas (PPPs). Oferecemos suporte estratégico em processos regulatórios perante agências e órgãos de controle, além de consultoria em conformidade regulatória e defesa em processos administrativos e judiciais." },
   { title: "Agronegócio ", description: "Prestamos assessoria jurídica completa para produtores, cooperativas e empresas do setor agroindustrial. Nosso trabalho engloba contratos de fornecimento e parceria rural, regularização fundiária, financiamento agrícola, operações de barter, questões ambientais e tributárias, bem como a estruturação societária de negócios ligados ao campo." },
@@ -29,59 +29,90 @@ const PracticeAreas = () => {
       }
     }
   }, [selectedArea, isMobile]);
-  
+
   return (
-    <div className="practice-wrapper">
-      <h1 className="visually-hidden">Áreas de atuação</h1>
-      {/* First row */}
-      <div className="side-blank" />
-      <div className="image-section">
-        <img src="/buildings2.webp" alt="Law Firm" className="hero-image" />
-      </div>
-      <div className="side-right" />
+    <>
 
-      {/* Second row */}
-      <div className="left-color" />
-      <div className="content-wrapper">
-        <div className="left-panel">
-          <h3 className="practice-areas-h3">ÁREAS DE</h3>
-          <h3 className="practice-areas-h3">ATUAÇÃO</h3>
 
-          <ul className="practice-areas-list">
-            {practiceAreas.map((area, index) => (
-              <li
-                key={index}
-                onClick={() => setSelectedArea(index)}
-                style={{
-                  cursor: 'pointer',
-                  color: selectedArea === index ? 'var(--color-primary)' : '#676'
-                }}
+      <Helmet>
+        <title>Áreas de Atuação | Sovierzoski, Carleial & Magnabosco Advogados</title>
+
+        {/* SEO Básico */}
+        <meta
+          name="description"
+          content="Conheça as áreas de atuação do Sovierzoski, Carleial & Magnabosco Advogados. Escritório full service em Curitiba, especializado em Direito Empresarial, Tributário, Trabalhista, Imobiliário, Digital e mais."
+        />
+        <meta
+          name="keywords"
+          content="advocacia Curitiba, áreas de atuação, direito empresarial, direito tributário, direito trabalhista, direito imobiliário, direito digital, direito ambiental, agronegócio, contratos, societário, comércio internacional, aduaneiro, propriedade intelectual, recuperacional, falimentar"
+        />
+        <meta name="author" content="Sovierzoski, Carleial & Magnabosco Advogados" />
+
+        {/* Open Graph (Facebook / LinkedIn / WhatsApp) */}
+        <meta property="og:title" content="Áreas de Atuação | Sovierzoski, Carleial & Magnabosco Advogados" />
+        <meta
+          property="og:description"
+          content="Atuação estratégica em Direito Empresarial, Tributário, Trabalhista, Imobiliário, Digital e outras áreas essenciais para empresas e negócios."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://scmradvogados.com.br/areas" />
+        <meta property="og:image" content="https://scmradvogados.com.br/public/android-chrome-512x512.png" />
+
+        {/* Opcional: Twitter pode ser removido se não usar */}
+      </Helmet>
+
+      <div className="practice-wrapper">
+        <h1 className="visually-hidden">Áreas de atuação</h1>
+        {/* First row */}
+        <div className="side-blank" />
+        <div className="image-section">
+          <img src="/buildings2.webp" alt="Law Firm" className="hero-image" />
+        </div>
+        <div className="side-right" />
+
+        {/* Second row */}
+        <div className="left-color" />
+        <div className="content-wrapper">
+          <div className="left-panel">
+            <h3 className="practice-areas-h3">ÁREAS DE</h3>
+            <h3 className="practice-areas-h3">ATUAÇÃO</h3>
+
+            <ul className="practice-areas-list">
+              {practiceAreas.map((area, index) => (
+                <li
+                  key={index}
+                  onClick={() => setSelectedArea(index)}
+                  style={{
+                    cursor: 'pointer',
+                    color: selectedArea === index ? 'var(--color-primary)' : '#676'
+                  }}
+                >
+                  <h3>{area.title}</h3>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="right-panel">
+            {selectedArea !== null && (
+              <button
+                onClick={() => setSelectedArea(null)}
+                className="close-button"
               >
-                <h3>{area.title}</h3>
-              </li>
-            ))}
-          </ul>
+                ←
+              </button>
+            )}
+            <h2>{selectedArea !== null ? practiceAreas[selectedArea].title : 'Atuação'}</h2>
+            <p>
+              {selectedArea !== null
+                ? practiceAreas[selectedArea].description
+                : 'Nosso escritório oferece assessoria jurídica estratégica e multidisciplinar em diversas áreas do Direito, atendendo tanto pessoas físicas quanto jurídicas em demandas consultivas e contenciosas. Atuamos na prevenção e solução de conflitos, na estruturação de negócios e na defesa de interesses perante órgãos administrativos e judiciais. Com uma equipe especializada e comprometida, buscamos sempre aliar rigor técnico, visão prática e inovação, oferecendo soluções seguras e eficientes para os desafios enfrentados por nossos clientes em setores como empresarial, contratual, societário, regulatório, trabalhista, ambiental, imobiliário, tributário, tecnológico e internacional.'}
+            </p>
+          </div>
         </div>
-
-        <div className="right-panel">
-          {selectedArea !== null && (
-            <button
-              onClick={() => setSelectedArea(null)}
-              className="close-button"
-            >
-              ←
-            </button>
-          )}
-          <h2>{selectedArea !== null ? practiceAreas[selectedArea].title : 'Atuação'}</h2>
-          <p>
-            {selectedArea !== null
-              ? practiceAreas[selectedArea].description
-              : 'Nosso escritório oferece assessoria jurídica estratégica e multidisciplinar em diversas áreas do Direito, atendendo tanto pessoas físicas quanto jurídicas em demandas consultivas e contenciosas. Atuamos na prevenção e solução de conflitos, na estruturação de negócios e na defesa de interesses perante órgãos administrativos e judiciais. Com uma equipe especializada e comprometida, buscamos sempre aliar rigor técnico, visão prática e inovação, oferecendo soluções seguras e eficientes para os desafios enfrentados por nossos clientes em setores como empresarial, contratual, societário, regulatório, trabalhista, ambiental, imobiliário, tributário, tecnológico e internacional.'}
-          </p>
-        </div>
+        <div className="side-right bottom" />
       </div>
-      <div className="side-right bottom" />
-    </div>
+    </>
   );
 };
 

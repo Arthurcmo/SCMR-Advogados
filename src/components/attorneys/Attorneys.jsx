@@ -1,5 +1,40 @@
 import React, { useState } from 'react';
 import './Attorneys.css';
+import { Helmet } from "react-helmet";
+
+<Helmet>
+  <title>Equipe | Sovierzoski, Carleial & Magnabosco Advogados</title>
+
+  {/* SEO Básico */}
+  <meta
+    name="description"
+    content="Conheça a equipe de sócios do Sovierzoski, Carleial & Magnabosco Advogados. Profissionais experientes e especializados em Direito Empresarial, Trabalhista e Tributário, atuando com excelência e visão estratégica."
+  />
+  <meta
+    name="keywords"
+    content="advogados Curitiba, equipe de advogados, sócios do escritório, Leonardo Sovierzoski, Paulo Magnabosco, Ricardo Carleial, direito empresarial, direito tributário, direito trabalhista, advocacia estratégica"
+  />
+  <meta name="author" content="Sovierzoski, Carleial & Magnabosco Advogados" />
+
+  {/* Open Graph (Facebook / LinkedIn / WhatsApp) */}
+  <meta property="og:title" content="Equipe | Sovierzoski, Carleial & Magnabosco Advogados" />
+  <meta
+    property="og:description"
+    content="Sócios especializados em Direito Empresarial, Trabalhista e Tributário. Conheça Leonardo Sovierzoski, Paulo Magnabosco e Ricardo Carleial."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://scmradvogados.com.br/equipe" />
+  <meta property="og:image" content="https://scmradvogados.com.br/public/attorneysAlt.webp" />
+
+  {/* Twitter (opcional, se for usar) */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Equipe | Sovierzoski, Carleial & Magnabosco Advogados" />
+  <meta
+    name="twitter:description"
+    content="Equipe de advogados especializados em Direito Empresarial, Trabalhista e Tributário."
+  />
+  <meta name="twitter:image" content="https://scmradvogados.com.br/public/attorneysAlt.webp" />
+</Helmet>
 
 const attorneys = [
   {
@@ -26,63 +61,101 @@ const Attorneys = () => {
   const [selectedAttorney, setSelectedAttorney] = useState(null);
 
   return (
-    <div className="att-wrapper">
-      <div className="att-blank" />
-      <div className="att-image-section">
-        <img
-          src={"/attorneysAlt.webp"}
-          alt="Equipe"
-          className="att-hero-image"
+    <>
+      import {Helmet} from "react-helmet";
+
+      <Helmet>
+        <title>Equipe | Sovierzoski, Carleial & Magnabosco Advogados</title>
+
+        {/* SEO Básico */}
+        <meta
+          name="description"
+          content="Conheça a equipe de sócios do Sovierzoski, Carleial & Magnabosco Advogados. Profissionais experientes e especializados em Direito Empresarial, Trabalhista e Tributário, atuando com excelência e visão estratégica."
         />
-      </div>
-      <div className="att-side-grey" />
+        <meta
+          name="keywords"
+          content="advogados Curitiba, equipe de advogados, sócios do escritório, Leonardo Sovierzoski, Paulo Magnabosco, Ricardo Carleial, direito empresarial, direito tributário, direito trabalhista, advocacia estratégica"
+        />
+        <meta name="author" content="Sovierzoski, Carleial & Magnabosco Advogados" />
 
-      <div className="att-color-left" />
-      <div className="att-content">
-        <div className="att-list-panel">
-          <h3 className="practice-areas-h3">SÓCIOS</h3>
-          <ul className="att-list">
-            {attorneys.map((attorney, index) => (
-              <li
-                key={index}
-                onClick={() => setSelectedAttorney(index)}
-                style={{
-                  cursor: 'pointer',
-                  color: selectedAttorney === index ? 'var(--color-primary)' : '#676'
-                }}
-              >
-                <p>{attorney.name}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
+        {/* Open Graph (Facebook / LinkedIn / WhatsApp) */}
+        <meta property="og:title" content="Equipe | Sovierzoski, Carleial & Magnabosco Advogados" />
+        <meta
+          property="og:description"
+          content="Sócios especializados em Direito Empresarial, Trabalhista e Tributário. Conheça Leonardo Sovierzoski, Paulo Magnabosco e Ricardo Carleial."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://scmradvogados.com.br/equipe" />
+        <meta property="og:image" content="https://scmradvogados.com.br/public/attorneysAlt.webp" />
 
-        <div className="att-detail-panel">
-          {selectedAttorney !== null && (
-            <button onClick={() => setSelectedAttorney(null)} className="att-close-btn">
-              ←
-            </button>
-          )}
-          <h2>{selectedAttorney !== null ? attorneys[selectedAttorney].name : 'Equipe de Advogados'}</h2>
-          <h4>{selectedAttorney !== null ? attorneys[selectedAttorney].title : 'Nossa equipe é formada por profissionais altamente qualificados e especializados em diferentes áreas do Direito, que atuam com excelência técnica, rigor ético e visão estratégica.'}</h4>
-          <p>
-            {selectedAttorney !== null
-              ? attorneys[selectedAttorney].bio
-              : 'Unimos experiência e inovação em uma atuação colaborativa, voltada a oferecer soluções jurídicas personalizadas e de alto nível, sempre orientadas à proteção e ao fortalecimento dos interesses de nossos clientes.'}
-          </p>
-        </div>
-      </div>
+        {/* Twitter (opcional, se for usar) */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Equipe | Sovierzoski, Carleial & Magnabosco Advogados" />
+        <meta
+          name="twitter:description"
+          content="Equipe de advogados especializados em Direito Empresarial, Trabalhista e Tributário."
+        />
+        <meta name="twitter:image" content="https://scmradvogados.com.br/public/attorneysAlt.webp" />
+      </Helmet>
 
-      <div className="att-detail-image">
-        {selectedAttorney !== null && (
+      <div className="att-wrapper">
+        <div className="att-blank" />
+        <div className="att-image-section">
           <img
-            src={attorneys[selectedAttorney].image}
-            alt={attorneys[selectedAttorney].name}
-            className="att-attorney-image"
+            src={"/attorneysAlt.webp"}
+            alt="Equipe"
+            className="att-hero-image"
           />
-        )}
+        </div>
+        <div className="att-side-grey" />
+
+        <div className="att-color-left" />
+        <div className="att-content">
+          <div className="att-list-panel">
+            <h3 className="practice-areas-h3">SÓCIOS</h3>
+            <ul className="att-list">
+              {attorneys.map((attorney, index) => (
+                <li
+                  key={index}
+                  onClick={() => setSelectedAttorney(index)}
+                  style={{
+                    cursor: 'pointer',
+                    color: selectedAttorney === index ? 'var(--color-primary)' : '#676'
+                  }}
+                >
+                  <p>{attorney.name}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="att-detail-panel">
+            {selectedAttorney !== null && (
+              <button onClick={() => setSelectedAttorney(null)} className="att-close-btn">
+                ←
+              </button>
+            )}
+            <h2>{selectedAttorney !== null ? attorneys[selectedAttorney].name : 'Equipe de Advogados'}</h2>
+            <h4>{selectedAttorney !== null ? attorneys[selectedAttorney].title : 'Nossa equipe é formada por profissionais altamente qualificados e especializados em diferentes áreas do Direito, que atuam com excelência técnica, rigor ético e visão estratégica.'}</h4>
+            <p>
+              {selectedAttorney !== null
+                ? attorneys[selectedAttorney].bio
+                : 'Unimos experiência e inovação em uma atuação colaborativa, voltada a oferecer soluções jurídicas personalizadas e de alto nível, sempre orientadas à proteção e ao fortalecimento dos interesses de nossos clientes.'}
+            </p>
+          </div>
+        </div>
+
+        <div className="att-detail-image">
+          {selectedAttorney !== null && (
+            <img
+              src={attorneys[selectedAttorney].image}
+              alt={attorneys[selectedAttorney].name}
+              className="att-attorney-image"
+            />
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
