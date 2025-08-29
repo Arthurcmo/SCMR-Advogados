@@ -15,35 +15,35 @@ const Home = () => {
                 <title>Sovierzoski, Carleial & Magnabosco Advogados</title>
                 <meta
                     name="description"
-                    content="Escritório de advocacia especializado em direito civil, trabalhista e empresarial. Atendimento personalizado em Curitiba e região."
+                    content="Escritório de advocacia em Curitiba especializado em Direito Empresarial, Tributário, Trabalhista e Imobiliário, com atuação em diversas áreas estratégicas."
                 />
                 <meta
                     name="keywords"
-                    content="advocacia, direito civil, trabalhista, empresarial, Curitiba, advogados, Sovierzoski, Carleial, Magnabosco"
+                    content="Administrativo e Regulatório, Agronegócio, Ambiental, Comércio Internacional e Aduaneiro, Contratos, Empresaria, Imobiliário, Precatórios e Ativos Judiciais, Recuperacional e Falimenta, Relações de Trabalho, Societário, Tecnologia e Propriedade Intelectual, Tributário, empresarial, Curitiba, advogados, Sovierzoski, Carleial, Magnabosco"
                 />
-                <link rel="canonical" href="https://site-advocacia-rust.vercel.app" />
+                <link rel="canonical" href="https://scmradvogados.com.br" />
 
                 <script type="application/ld+json">{`
                 {
                     "@context": "https://schema.org",
                     "@type": "LegalService",
-                    "name": "Sovierzoski Carleial Magnabosco Advocacia",
-                    "url": "https://site-advocacia-rust.vercel.app",
+                    "name": "Sovierzoski, Carleial & Magnabosco advogados",
+                    "url": "https://scmradvogados.com.br",
                     "logo": "/public\android-chrome-512x512.png",
-                    "description": "Escritório de advocacia especializado em direito civil, trabalhista e empresarial. Atendimento personalizado em Curitiba.",
+                    "description": "Escritório de advocacia em Curitiba especializado em Direito Empresarial, Tributário, Trabalhista e Imobiliário, com atuação em diversas áreas estratégicas.",
                     "address": {
                         "@type": "PostalAddress",
-                        "streetAddress": "Rua Exemplo, 123",
+                        "streetAddress": "Rua Tibagi, 576, Sala 607",
                         "addressLocality": "Curitiba",
                         "addressRegion": "PR",
-                        "postalCode": "80000-000",
+                        "postalCode": " 80060-110",
                         "addressCountry": "BR"
                     },
-                    "telephone": "+55 41 3030-9890",
+                    "telephone": "+55 41 98807-7655",
                     "sameAs": [
-                        "https://www.instagram.com/seuinsta",
-                        "https://www.linkedin.com/in/seulinkedin",
-                        "https://www.facebook.com/seufacebook"
+                        "https://www.instagram.com/scmradvogados",
+                        "https://www.linkedin.com/company/sovierzoski-carleial-magnabosco-advogados",
+                        
                     ]
                 }
                 `}</script>

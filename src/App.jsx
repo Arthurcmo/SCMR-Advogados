@@ -16,11 +16,11 @@ import './App.css'; // Importando o CSS global
 
 const imagesToPreload = [
   "about1.webp",
-  "AbottPhoto.webp",
+  "AboutPhoto.webp",
   "attorneysAlt.webp",
   "buildings1.webp",
-  "builginds2.webp",
-  "digital.webp",
+  "buildings2.webp",
+  "digital.png",
   "heronew1.webp",
   "PaginaInicial.webp",
   "Publicacao.webp"
@@ -36,7 +36,11 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<>
+        <h1 className="visually-hidden">Início</h1>
+        <Home />
+        </>
+          } />
         <Route path="/sobre" element={<About/>} />
         <Route path="/publicacoes" element={<>
                                     <h1 className="visually-hidden">Publicações</h1>

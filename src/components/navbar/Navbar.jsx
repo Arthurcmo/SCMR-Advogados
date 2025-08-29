@@ -26,6 +26,7 @@ function Navbar() {
         <Link to="/">
           <img
             src={isDark ? '/05-cropped.svg' : '/05-cropped.svg'}
+            alt='Logo'
             className={` ${scrolled ? 'navbar-logo' : 'navbar-logo'}`}
           />
         </Link>
