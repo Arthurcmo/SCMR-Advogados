@@ -2,39 +2,6 @@ import React, { useState } from 'react';
 import './Attorneys.css';
 import { Helmet } from "react-helmet";
 
-<Helmet>
-  <title>Equipe | Sovierzoski, Carleial & Magnabosco Advogados</title>
-
-  {/* SEO Básico */}
-  <meta
-    name="description"
-    content="Conheça a equipe de sócios do Sovierzoski, Carleial & Magnabosco Advogados. Profissionais experientes e especializados em Direito Empresarial, Trabalhista e Tributário, atuando com excelência e visão estratégica."
-  />
-  <meta
-    name="keywords"
-    content="advogados Curitiba, equipe de advogados, sócios do escritório, Leonardo Sovierzoski, Paulo Magnabosco, Ricardo Carleial, direito empresarial, direito tributário, direito trabalhista, advocacia estratégica"
-  />
-  <meta name="author" content="Sovierzoski, Carleial & Magnabosco Advogados" />
-
-  {/* Open Graph (Facebook / LinkedIn / WhatsApp) */}
-  <meta property="og:title" content="Equipe | Sovierzoski, Carleial & Magnabosco Advogados" />
-  <meta
-    property="og:description"
-    content="Sócios especializados em Direito Empresarial, Trabalhista e Tributário. Conheça Leonardo Sovierzoski, Paulo Magnabosco e Ricardo Carleial."
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://scmradvogados.com.br/equipe" />
-  <meta property="og:image" content="https://scmradvogados.com.br/public/attorneysAlt.webp" />
-
-  {/* Twitter (opcional, se for usar) */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Equipe | Sovierzoski, Carleial & Magnabosco Advogados" />
-  <meta
-    name="twitter:description"
-    content="Equipe de advogados especializados em Direito Empresarial, Trabalhista e Tributário."
-  />
-  <meta name="twitter:image" content="https://scmradvogados.com.br/public/attorneysAlt.webp" />
-</Helmet>
 
 const attorneys = [
   {
@@ -62,8 +29,6 @@ const Attorneys = () => {
 
   return (
     <>
-      import {Helmet} from "react-helmet";
-
       <Helmet>
         <title>Equipe | Sovierzoski, Carleial & Magnabosco Advogados</title>
 
