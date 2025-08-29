@@ -23,6 +23,19 @@ const Home = () => {
                 />
                 <link rel="canonical" href="https://scmradvogados.com.br" />
 
+                <meta property="og:title" content="Sovierzoski, Carleial & Magnabosco Advogados | Advocacia Estratégica em Curitiba" />
+                <meta property="og:description" content="Escritório de advocacia em Curitiba especializado em Direito Empresarial, Tributário, Trabalhista e Civil. Atendimento personalizado e soluções estratégicas para empresas." />
+                <meta property="og:image" content="https://scmradvogados.com.br/android-chrome-512x512.png" />
+                <meta property="og:url" content="https://scmradvogados.com.br" />
+                <meta property="og:type" content="website" />
+
+
+                <meta name="twitter:title" content="Sovierzoski, Carleial & Magnabosco Advogados | Advocacia Estratégica em Curitiba" />
+                <meta name="twitter:description" content="Escritório de advocacia em Curitiba especializado em Direito Empresarial, Tributário, Trabalhista e Civil. Atendimento personalizado e soluções estratégicas para empresas." />
+                <meta name="twitter:image" content="https://scmradvogados.com.br/Publicacao.jpg" />
+                <meta name="twitter:url" content="https://scmradvogados.com.br" />
+                <meta name="twitter:card" content="summary_large_image" />
+
                 <script type="application/ld+json">{`
                 {
                     "@context": "https://schema.org",
@@ -51,7 +64,7 @@ const Home = () => {
             <div >
                 <Hero />
                 <BlogList />
-                
+
             </div>
         </>
     );
