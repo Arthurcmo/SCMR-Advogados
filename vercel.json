@@ -1,5 +1,27 @@
 {
+  "headers": [
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=0, s-maxage=60, stale-while-revalidate=59"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "max-age=60"
+        },
+        {
+          "key": "Vercel-CDN-Cache-Control",
+          "value": "max-age=60"
+        }
+      ]
+    }
+  ],
   "rewrites": [
-    { "source": "/sitemap.xml", "destination": "/src/api/sitemap" }
+    {
+      "source": "/sitemap.xml",
+      "destination": "src/api/sitemap"
+    }
   ]
 }
