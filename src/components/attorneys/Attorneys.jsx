@@ -38,43 +38,136 @@ React.useEffect(() => {
       }
     }, [selectedAttorney, isMobile]);
 
+const canonical = "https://scmradvogados.com.br/equipe";
+// === JSON-LD ===
+  // 1) Breadcrumbs
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Início",
+        "item": "https://scmradvogados.com.br/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Equipe",
+        "item": canonical
+      }
+    ]
+  };
+
+  // 2) Organização (referencia os membros por @id)
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "@id": "https://scmradvogados.com.br/#organization",
+    "name": "Sovierzoski, Carleial & Magnabosco Advogados",
+    "url": "https://scmradvogados.com.br/",
+    "logo": "https://scmradvogados.com.br/android-chrome-512x512.png",
+    "sameAs": [
+      "https://www.instagram.com/scmradvogados",
+      "https://www.linkedin.com/company/sovierzoski-carleial-magnabosco-advogados"
+    ],
+    "member": [
+      { "@id": "https://scmradvogados.com.br/equipe#leonardo-sovierzoski" },
+      { "@id": "https://scmradvogados.com.br/equipe#paulo-magnabosco" },
+      { "@id": "https://scmradvogados.com.br/equipe#ricardo-carleial" }
+    ]
+  };
+
+  // 3) Pessoas (um bloco por sócio)
+  const peopleJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://scmradvogados.com.br/equipe#leonardo-sovierzoski",
+      "name": "Leonardo Sovierzoski",
+      "jobTitle": "Sócio",
+      "worksFor": { "@id": "https://scmradvogados.com.br/#organization" },
+      "url": "https://scmradvogados.com.br/equipe",
+      // troque a URL da imagem pelo retrato real, se houver:
+      "image": "https://scmradvogados.com.br/FotoLeonardo.webp",
+      "sameAs": []
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://scmradvogados.com.br/equipe#paulo-magnabosco",
+      "name": "Paulo Magnabosco",
+      "jobTitle": "Sócio",
+      "worksFor": { "@id": "https://scmradvogados.com.br/#organization" },
+      "url": "https://scmradvogados.com.br/equipe",
+      "image": "https://scmradvogados.com.br/FotoPaulo.webp",
+      "sameAs": []
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://scmradvogados.com.br/equipe#ricardo-carleial",
+      "name": "Ricardo Carleial",
+      "jobTitle": "Sócio",
+      "worksFor": { "@id": "https://scmradvogados.com.br/#organization" },
+      "url": "https://scmradvogados.com.br/equipe",
+      "image": "https://scmradvogados.com.br/FotoRicardo.webp",
+      "sameAs": []
+    }
+  ];
 
  
   return (
     <>
-      <Helmet>
-        <title>Equipe | Sovierzoski, Carleial & Magnabosco Advogados</title>
+     <Helmet>
+      {/* Título / Canonical / Description */}
+      <title>Equipe | Sovierzoski, Carleial & Magnabosco Advogados</title>
+      <link rel="canonical" href={canonical} />
+      <meta
+        name="description"
+        content="Conheça a equipe de sócios do Sovierzoski, Carleial & Magnabosco Advogados. Profissionais experientes em Direito Empresarial, Trabalhista e Tributário."
+      />
 
-        {/* SEO Básico */}
-        <meta
-          name="description"
-          content="Conheça a equipe de sócios do Sovierzoski, Carleial & Magnabosco Advogados. Profissionais experientes e especializados em Direito Empresarial, Trabalhista e Tributário, atuando com excelência e visão estratégica."
-        />
-        <meta
-          name="keywords"
-          content="advogados Curitiba, equipe de advogados, sócios do escritório, Leonardo Sovierzoski, Paulo Magnabosco, Ricardo Carleial, direito empresarial, direito tributário, direito trabalhista, advocacia estratégica"
-        />
-        <meta name="author" content="Sovierzoski, Carleial & Magnabosco Advogados" />
+      {/* Open Graph */}
+      <meta property="og:site_name" content="SCMR Advogados" />
+      <meta property="og:title" content="Equipe | Sovierzoski, Carleial & Magnabosco Advogados" />
+      <meta
+        property="og:description"
+        content="Sócios especializados em Direito Empresarial, Trabalhista e Tributário."
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={canonical} />
+      {/* use uma imagem real da equipe; evite caminho com /public */}
+      <meta property="og:image" content="https://scmradvogados.com.br/attorneysAlt.webp" />
+      <meta property="og:image:alt" content="Equipe SCMR Advogados" />
 
-        {/* Open Graph (Facebook / LinkedIn / WhatsApp) */}
-        <meta property="og:title" content="Equipe | Sovierzoski, Carleial & Magnabosco Advogados" />
-        <meta
-          property="og:description"
-          content="Sócios especializados em Direito Empresarial, Trabalhista e Tributário. Conheça Leonardo Sovierzoski, Paulo Magnabosco e Ricardo Carleial."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://scmradvogados.com.br/equipe" />
-        <meta property="og:image" content="https://scmradvogados.com.br/public/attorneysAlt.webp" />
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Equipe | Sovierzoski, Carleial & Magnabosco Advogados" />
+      <meta
+        name="twitter:description"
+        content="Sócios especializados em Direito Empresarial, Trabalhista e Tributário."
+      />
+      <meta name="twitter:image" content="https://scmradvogados.com.br/attorneysAlt.webp" />
 
-        {/* Twitter (opcional, se for usar) */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Equipe | Sovierzoski, Carleial & Magnabosco Advogados" />
-        <meta
-          name="twitter:description"
-          content="Equipe de advogados especializados em Direito Empresarial, Trabalhista e Tributário."
-        />
-        <meta name="twitter:image" content="https://scmradvogados.com.br/public/attorneysAlt.webp" />
-      </Helmet>
+      {/* JSON-LD - Breadcrumbs */}
+      <script type="application/ld+json">
+        {JSON.stringify(breadcrumbJsonLd)}
+      </script>
+
+      {/* JSON-LD - Organização */}
+      <script type="application/ld+json">
+        {JSON.stringify(orgJsonLd)}
+      </script>
+
+      {/* JSON-LD - Pessoas */}
+      {peopleJsonLd.map((block, i) => (
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(block)}
+        </script>
+      ))}
+    </Helmet>
       
 
       <div className="att-wrapper">
