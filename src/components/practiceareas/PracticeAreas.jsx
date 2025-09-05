@@ -21,6 +21,14 @@ const PracticeAreas = () => {
   const [selectedArea, setSelectedArea] = useState(null);
   const isMobile = window.innerWidth <= 768;
 
+   React.useEffect(() => {
+      if (isMobile && selectedArea !== null) {
+        const rightPanel = document.querySelector('.right-panel');
+        if (rightPanel) {
+          rightPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    }, [selectedArea, isMobile]);
   
 
   return (
@@ -99,7 +107,12 @@ const PracticeAreas = () => {
             <p>
               {selectedArea !== null
                 ? practiceAreas[selectedArea].description
-                : 'Nosso escritório oferece assessoria jurídica estratégica e multidisciplinar em diversas áreas do Direito, atendendo tanto pessoas físicas quanto jurídicas em demandas consultivas e contenciosas. Atuamos na prevenção e solução de conflitos, na estruturação de negócios e na defesa de interesses perante órgãos administrativos e judiciais. Com uma equipe especializada e comprometida, buscamos sempre aliar rigor técnico, visão prática e inovação, oferecendo soluções seguras e eficientes para os desafios enfrentados por nossos clientes em setores como empresarial, contratual, societário, regulatório, trabalhista, ambiental, imobiliário, tributário, tecnológico e internacional.'}
+                : 'Nosso escritório oferece assessoria jurídica estratégica e multidisciplinar em diversas áreas do Direito, atendendo tanto pessoas físicas quanto jurídicas em demandas consultivas e contenciosas. Atuamos na prevenção e solução de conflitos, na estruturação de negócios e na defesa de interesses perante órgãos administrativos e judiciais. '}
+            </p>
+             <p>
+              {selectedArea !== null
+                ? ''
+                : 'Com uma equipe especializada e comprometida, buscamos sempre aliar rigor técnico, visão prática e inovação, oferecendo soluções seguras e eficientes para os desafios enfrentados por nossos clientes em setores como empresarial, contratual, societário, regulatório, trabalhista, ambiental, imobiliário, tributário, tecnológico e internacional.'}
             </p>
           </div>
         </div>

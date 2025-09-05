@@ -14,7 +14,7 @@ const attorneys = [
     name: "Paulo Magnabosco",
     title: "OAB/PR 119.157",
     image: "/FotoPaulo.webp",
-    bio: "Sócio responsável pela área trabalhista. Graduado pela Pontifícia Universidade Católica do Paraná e pós-graduado em Direito e Processo do Trabalho pela Pontifícia Universidade Católica do Rio Grande do Sul. Membro da Comissão de Direito do Trabalho da OAB/PR. Atua na consultoria e no contencioso trabalhista, representando empresas e trabalhadores, com foco predominante na assessoria preventiva e na defesa estratégica dos interesses patronais.",
+    bio: "Sócio responsável pela área Trabalhista. Graduado pela Pontifícia Universidade Católica do Paraná e pós-graduado em Direito e Processo do Trabalho pela Pontifícia Universidade Católica do Rio Grande do Sul. Membro da Comissão de Direito do Trabalho da OAB/PR. Atua na consultoria e no contencioso trabalhista, representando empresas e trabalhadores, com foco predominante na assessoria preventiva e na defesa estratégica dos interesses patronais.",
   },
   {
     name: "Ricardo Carleial",
@@ -25,8 +25,21 @@ const attorneys = [
 ];
 
 const Attorneys = () => {
-  const [selectedAttorney, setSelectedAttorney] = useState(null);
+  
+const [selectedAttorney, setSelectedAttorney] = useState(null);
+ const isMobile = window.innerWidth <= 768;
+  
+React.useEffect(() => {
+      if (isMobile && selectedAttorney !== null) {
+        const rightPanel = document.querySelector('.att-list');
+        if (rightPanel) {
+          rightPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    }, [selectedAttorney, isMobile]);
 
+
+ 
   return (
     <>
       <Helmet>
@@ -62,6 +75,7 @@ const Attorneys = () => {
         />
         <meta name="twitter:image" content="https://scmradvogados.com.br/public/attorneysAlt.webp" />
       </Helmet>
+      
 
       <div className="att-wrapper">
         <div className="att-blank" />
