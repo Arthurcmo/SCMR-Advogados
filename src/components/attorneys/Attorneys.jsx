@@ -34,6 +34,7 @@ React.useEffect(() => {
         const rightPanel = document.querySelector('.att-list');
         if (rightPanel) {
           rightPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          window.scrollBy({ top: -260, behavior: 'smooth' }); // adjust -60 to your needs
         }
       }
     }, [selectedAttorney, isMobile]);

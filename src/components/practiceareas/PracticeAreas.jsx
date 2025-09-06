@@ -26,6 +26,8 @@ const PracticeAreas = () => {
         const rightPanel = document.querySelector('.right-panel');
         if (rightPanel) {
           rightPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          window.scrollBy({ top: -260, behavior: 'smooth' }); // adjust -60 to your needs
+
         }
       }
     }, [selectedArea, isMobile]);
@@ -92,6 +94,13 @@ const PracticeAreas = () => {
                 </li>
               ))}
             </ul>
+            {isMobile && (
+              <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
+                <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <polygon points="16,16 4,4 28,4" fill="#888" />
+                </svg>
+              </div>
+            )}
           </div>
 
           <div className="right-panel">
