@@ -21,16 +21,21 @@ const PracticeAreas = () => {
   const [selectedArea, setSelectedArea] = useState(null);
   const isMobile = window.innerWidth <= 768;
 
-   React.useEffect(() => {
-      if (isMobile && selectedArea !== null) {
-        const rightPanel = document.querySelector('.right-panel');
-        if (rightPanel) {
-          rightPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          window.scrollBy({ top: -260, behavior: 'smooth' }); // adjust -60 to your needs
+  React.useEffect(() => {
+  if (isMobile && selectedArea !== null) {
+    const rightPanel = document.querySelector('.right-panel');
+    if (rightPanel) {
+      // offset para compensar header fixo etc.
+      rightPanel.style.scrollMarginTop = '260px';
 
-        }
-      }
-    }, [selectedArea, isMobile]);
+      // iOS às vezes ignora se chamarmos imediatamente
+      requestAnimationFrame(() => {
+        rightPanel.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+      });
+    }
+  }
+}, [selectedArea, isMobile]);
+
   
 
   return (

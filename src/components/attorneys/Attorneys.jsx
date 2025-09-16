@@ -30,14 +30,20 @@ const [selectedAttorney, setSelectedAttorney] = useState(null);
  const isMobile = window.innerWidth <= 768;
   
 React.useEffect(() => {
-      if (isMobile && selectedAttorney !== null) {
-        const rightPanel = document.querySelector('.att-list');
-        if (rightPanel) {
-          rightPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          window.scrollBy({ top: -260, behavior: 'smooth' }); // adjust -60 to your needs
-        }
-      }
-    }, [selectedAttorney, isMobile]);
+  if (isMobile && selectedAttorney !== null) {
+    const rightPanel = document.querySelector('.att-list');
+    if (rightPanel) {
+      // compensa o header fixo sem usar window.scrollBy
+      rightPanel.style.scrollMarginTop = '260px';
+
+      // no iOS, chame após o layout estabilizar
+      requestAnimationFrame(() => {
+        rightPanel.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+      });
+    }
+  }
+}, [selectedAttorney, isMobile]);
+
 
 const canonical = "https://scmradvogados.com.br/equipe";
 // === JSON-LD ===
