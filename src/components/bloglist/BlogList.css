@@ -135,6 +135,7 @@
   cursor: pointer;
   color: white;
   background-color: var(--color-secondary);
+  margin-bottom: 0.75rem;
 }
 
 .blog-nav-button:hover {
@@ -144,6 +145,9 @@
 .blog-dots {
   display: flex;
   gap: 0.5rem;
+  position:absolute;
+  left: 19vw;
+  background-color: #ffffff;;
 }
 
 .blog-dot {
