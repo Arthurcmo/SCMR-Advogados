@@ -1,12 +1,7 @@
 import React from 'react';
 import Hero from '../../components/hero/Hero';
-import Stats from '../../components/stats/Stats';
-import PracticeAreas from '../../components/practiceareas/PracticeAreas';
-import Attorneys from '../../components/attorneys/Attorneys';
-import Footer from '../../components/footer/Footer';
 import BlogList from '../../components/bloglist/BlogList';
 import Helmet from 'react-helmet';
-import ContactPage from '../../pages/contact/ContactPage';
 
 const Home = () => {
     const orgJsonLd = {
