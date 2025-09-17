@@ -252,6 +252,7 @@
     background:none;
     margin-left: 1rem;
     padding: 0.25rem 0;
+    position: relative;
   }
 
   .blog-navigation-mobile .blog-nav-button {
