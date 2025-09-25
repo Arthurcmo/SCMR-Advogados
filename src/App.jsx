@@ -23,7 +23,10 @@ const imagesToPreload = [
   "digital.png",
   "heronew1.webp",
   "PaginaInicial.webp",
-  "Publicacao.webp"
+  "Publicacao.webp",
+  "Foto - Leco - Equipe.jpg",
+  "Foto - Paulo - Equipe.jpg",
+  "Foto - Ricardo - Equipe.jpg"
 ];
 
 imagesToPreload.forEach((src) => {
