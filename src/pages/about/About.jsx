@@ -36,7 +36,7 @@ const About = () => {
         {/* First row */}
         <div className="side-blank" />
         <div className="image-section">
-          <img src="/AboutComp.webp" alt="Law Firm" className="abt-hero-image" />
+          <img src="/About.webp" alt="Law Firm" className="abt-hero-image" />
         </div>
         <div className="side-right" />
 
