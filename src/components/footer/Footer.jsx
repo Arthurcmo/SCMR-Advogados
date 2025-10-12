@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <footer className="footer">
         <div className="footer-links">
-          <p>Email: contato@scmadvogados.com</p>
+          <p>Email: contato@scmadvogados.com.br</p>
           <p>Telefone: (41) 98807-7655</p>
           <p>Curitiba - PR</p>
           <p>Rua Tibagi 576, Sala 607</p>

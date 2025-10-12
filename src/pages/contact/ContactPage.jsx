@@ -6,7 +6,7 @@ const ContactPage = () => {
       <div className="contact-form">
         <h2>Fale conosco</h2>
         <form
-          action="https://formsubmit.co/arthur_munhoz@hotmail.com"
+          action="https://formsubmit.co/contato@scmradvogados.com.br"
           method="POST"
         >
           <div className="form-group">
