@@ -21,8 +21,8 @@ const Footer = () => {
         <div className="footer-links">
           <p>Email: contato@scmadvogados.com.br</p>
           <p>Telefone: (41) 98807-7655</p>
+          <p>Alameda Doutor Carlos de Carvalho 1027, Sala 23, Batel</p>
           <p>Curitiba - PR</p>
-          <p>Rua Tibagi 576, Sala 607</p>
         </div>
 
         <div className="footer-contact">
