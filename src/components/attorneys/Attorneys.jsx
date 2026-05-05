@@ -20,7 +20,7 @@ const attorneys = [
     name: "Ricardo Carleial",
     title: "OAB/PR 131.251",
     image: "/Foto - Ricardo - Equipe.jpg",
-    bio: "Sócio responsável pela área Tributária. Graduado em Direito pela Pontifícia Universidade Católica de Minas Gerais e pós-graduando em Direito Tributário pela Pontifícia Universidade Católica do Rio Grande do Sul. Atua na consultoria e no contencioso tributário, com ênfase na defesa de interesses empresariais em demandas estratégicas e estruturadas.",
+    bio: "Sócio responsável pela área Tributária. Graduado em Direito pela Pontifícia Universidade Católica de Minas Gerais e graduando em Ciências Contabéis pela FIPECAFI/SP. Atua na consultoria e no contencioso tributário, com ênfase na defesa de interesses empresariais em demandas estratégicas.",
   },
 ];
 
